@@ -22,7 +22,7 @@ seg000:0000
 seg000:0000 ; Attributes: noreturn
 seg000:0000
 seg000:0000                 public start
-seg000:0000 start           proc near               ; DATA XREF: exit+14o
+seg000:0000 start           proc near               ; DATA XREF: exit+14 o
 seg000:0000
 seg000:0000 ; FUNCTION CHUNK AT seg000:0155 SIZE 0000001D BYTES
 seg000:0000
@@ -50,7 +50,7 @@ seg000:002F                 mov     cx, 7FFFh
 seg000:0032                 mov     di, ax
 seg000:0034                 mov     bx, ax
 seg000:0036
-seg000:0036 loc_10036:                              ; CODE XREF: start+62j
+seg000:0036 loc_10036:                              ; CODE XREF: start+62 j
 seg000:0036                 cmp     word ptr es:[di], 3738h
 seg000:003B                 jnz     short loc_1005A
 seg000:003D                 push    di
@@ -66,13 +66,13 @@ seg000:004F                 cmp     al, 59h ; 'Y'
 seg000:0051                 jnz     short loc_10057
 seg000:0053                 inc     word_1121A
 seg000:0057
-seg000:0057 loc_10057:                              ; CODE XREF: start+44j
-seg000:0057                                         ; start+51j
+seg000:0057 loc_10057:                              ; CODE XREF: start+44 j
+seg000:0057                                         ; start+51 j
 seg000:0057                 pop     ax
 seg000:0058                 pop     cx
 seg000:0059                 pop     di
 seg000:005A
-seg000:005A loc_1005A:                              ; CODE XREF: start+3Bj
+seg000:005A loc_1005A:                              ; CODE XREF: start+3B j
 seg000:005A                 repne scasb
 seg000:005C                 jcxz    short loc_100C1
 seg000:005E                 inc     bx
@@ -110,7 +110,7 @@ seg000:009F                 cmp     di, bx
 seg000:00A1                 ja      short loc_100A5
 seg000:00A3                 mov     di, bx
 seg000:00A5
-seg000:00A5 loc_100A5:                              ; CODE XREF: start+A1j
+seg000:00A5 loc_100A5:                              ; CODE XREF: start+A1 j
 seg000:00A5                 mov     dx, ds
 seg000:00A7                 add     bx, 1670h
 seg000:00AB                 jb      short loc_100C1
@@ -125,13 +125,13 @@ seg000:00BB                 xchg    bx, di
 seg000:00BD                 cmp     bp, di
 seg000:00BF                 ja      short loc_100C4
 seg000:00C1
-seg000:00C1 loc_100C1:                              ; CODE XREF: start+5Cj
-seg000:00C1                                         ; start+ABj
+seg000:00C1 loc_100C1:                              ; CODE XREF: start+5C j
+seg000:00C1                                         ; start+AB j
 seg000:00C1                 jmp     abort
 seg000:00C4 ; ---------------------------------------------------------------------------
 seg000:00C4
-seg000:00C4 loc_100C4:                              ; CODE XREF: start+B9j
-seg000:00C4                                         ; start+BFj
+seg000:00C4 loc_100C4:                              ; CODE XREF: start+B9 j
+seg000:00C4                                         ; start+BF j
 seg000:00C4                 mov     bx, di
 seg000:00C6                 add     bx, dx
 seg000:00C8                 mov     word_11220, bx
@@ -168,8 +168,8 @@ seg000:010B ; =============== S U B R O U T I N E ==============================
 seg000:010B
 seg000:010B ; Attributes: noreturn
 seg000:010B
-seg000:010B sub_1010B       proc near               ; CODE XREF: start+163p
-seg000:010B                                         ; exit+29p
+seg000:010B sub_1010B       proc near               ; CODE XREF: start+163 p
+seg000:010B                                         ; exit+29 p
 seg000:010B                 mov     ax, 2500h
 seg000:010E                 lds     dx, dword ptr aNullPointerAss+45h
 seg000:0112                 int     21h             ; DOS - SET INTERRUPT VECTOR
@@ -184,7 +184,7 @@ seg000:0122                 mov     cx, 2Fh ; '/'
 seg000:0125                 nop
 seg000:0126                 cld
 seg000:0127
-seg000:0127 loc_10127:                              ; CODE XREF: sub_1010B+22j
+seg000:0127 loc_10127:                              ; CODE XREF: sub_1010B+22 j
 seg000:0127                 add     al, [si]
 seg000:0129                 adc     ah, 0
 seg000:012C                 inc     si
@@ -197,7 +197,7 @@ seg000:0138                 nop
 seg000:0139                 mov     dx, offset aNullPointerAss ; "Null pointer assignment\r\nDivide error\r\n"...
 seg000:013C                 call    write_to_file
 seg000:013F
-seg000:013F loc_1013F:                              ; CODE XREF: sub_1010B+28j
+seg000:013F loc_1013F:                              ; CODE XREF: sub_1010B+28 j
 seg000:013F                 mov     bp, sp
 seg000:0141                 mov     al, [bp+2]
 seg000:0144                 mov     ah, 4Ch
@@ -208,8 +208,8 @@ seg000:0148
 seg000:0148 ; =============== S U B R O U T I N E =======================================
 seg000:0148
 seg000:0148
-seg000:0148 write_to_file   proc near               ; CODE XREF: sub_1010B+31p
-seg000:0148                                         ; start+15Cp ...
+seg000:0148 write_to_file   proc near               ; CODE XREF: sub_1010B+31 p
+seg000:0148                                         ; start+15C p ...
 seg000:0148                 mov     ah, 40h ; '@'
 seg000:014A                 mov     bx, offset stdout
 seg000:014D                 mov     ds, cs:ds_address
@@ -221,20 +221,20 @@ seg000:0154
 seg000:0155 ; ---------------------------------------------------------------------------
 seg000:0155 ; START OF FUNCTION CHUNK FOR start
 seg000:0155
-seg000:0155 abort:                                  ; CODE XREF: start:loc_100C1j
-seg000:0155                                         ; sub_10855+19j ...
+seg000:0155 abort:                                  ; CODE XREF: start:loc_100C1 j
+seg000:0155                                         ; sub_10855+19 j ...
 seg000:0155                 mov     cx, 1Eh
 seg000:0158                 nop
 seg000:0159                 mov     dx, (offset aNullPointerAss+27h)
 seg000:015C                 call    write_to_file
 seg000:015F
-seg000:015F loc_1015F:                              ; CODE XREF: start+170j
+seg000:015F loc_1015F:                              ; CODE XREF: start+170 j
 seg000:015F                 mov     ax, 3
 seg000:0162                 push    ax
 seg000:0163                 call    sub_1010B
 seg000:0166 ; ---------------------------------------------------------------------------
 seg000:0166
-seg000:0166 divide_by_zero_handler:                 ; DATA XREF: start+8Do
+seg000:0166 divide_by_zero_handler:                 ; DATA XREF: start+8D o
 seg000:0166                 mov     cx, 0Eh
 seg000:0169                 nop
 seg000:016A                 mov     dx, (offset aNullPointerAss+19h)
@@ -242,14 +242,14 @@ seg000:016D                 call    write_to_file
 seg000:0170                 jmp     short loc_1015F
 seg000:0170 ; END OF FUNCTION CHUNK FOR start
 seg000:0170 ; ---------------------------------------------------------------------------
-seg000:0172 ds_address      dw 0                    ; DATA XREF: start:loc_10003w
-seg000:0172                                         ; start+E9r ...
+seg000:0172 ds_address      dw 0                    ; DATA XREF: start:loc_10003 w
+seg000:0172                                         ; start+E9 r ...
 seg000:0174
 seg000:0174 ; =============== S U B R O U T I N E =======================================
 seg000:0174
 seg000:0174 ; Attributes: bp-based frame
 seg000:0174
-seg000:0174 sub_10174       proc near               ; CODE XREF: start+104p
+seg000:0174 sub_10174       proc near               ; CODE XREF: start+104 p
 seg000:0174
 seg000:0174 var_14          = word ptr -14h
 seg000:0174 var_12          = word ptr -12h
@@ -270,7 +270,7 @@ seg000:0179                 sub     sp, 14h
 seg000:017C                 xor     si, si
 seg000:017E                 call    clear_screen
 seg000:0181
-seg000:0181 maze_selector:                          ; CODE XREF: sub_10174+386j
+seg000:0181 maze_selector:                          ; CODE XREF: sub_10174+386 j
 seg000:0181                 mov     ax, 30
 seg000:0184                 push    ax
 seg000:0185                 mov     ax, offset aNumberOfMaze ; "Number of maze: "
@@ -282,8 +282,8 @@ seg000:0190                 push    ax
 seg000:0191                 call    display_string
 seg000:0194                 add     sp, 8
 seg000:0197
-seg000:0197 maze_selector_loop:                     ; CODE XREF: sub_10174+93j
-seg000:0197                                         ; sub_10174+9Cj ...
+seg000:0197 maze_selector_loop:                     ; CODE XREF: sub_10174+93 j
+seg000:0197                                         ; sub_10174+9C j ...
 seg000:0197                 mov     ax, si
 seg000:0199                 inc     ax
 seg000:019A                 push    ax
@@ -311,10 +311,10 @@ seg000:01CA                 mov     ax, 1
 seg000:01CD                 jmp     short loc_101D1
 seg000:01CF ; ---------------------------------------------------------------------------
 seg000:01CF
-seg000:01CF maze_selector_do_game:                  ; CODE XREF: sub_10174+54j
+seg000:01CF maze_selector_do_game:                  ; CODE XREF: sub_10174+54 j
 seg000:01CF                 xor     ax, ax
 seg000:01D1
-seg000:01D1 loc_101D1:                              ; CODE XREF: sub_10174+59j
+seg000:01D1 loc_101D1:                              ; CODE XREF: sub_10174+59 j
 seg000:01D1                 or      ax, ax
 seg000:01D3                 jz      short start_game
 seg000:01D5                 mov     al, [bp+key_code]
@@ -322,7 +322,7 @@ seg000:01D8                 cbw
 seg000:01D9                 mov     cx, 5           ; switch 5 cases
 seg000:01DC                 mov     bx, offset word_101EE
 seg000:01DF
-seg000:01DF loc_101DF:                              ; CODE XREF: sub_10174+72j
+seg000:01DF loc_101DF:                              ; CODE XREF: sub_10174+72 j
 seg000:01DF                 cmp     ax, cs:[bx]
 seg000:01E2                 jz      short loc_101EA
 seg000:01E4                 inc     bx
@@ -331,10 +331,10 @@ seg000:01E6                 loop    loc_101DF
 seg000:01E8                 jmp     short loc_1021C ; default
 seg000:01EA ; ---------------------------------------------------------------------------
 seg000:01EA
-seg000:01EA loc_101EA:                              ; CODE XREF: sub_10174+6Ej
+seg000:01EA loc_101EA:                              ; CODE XREF: sub_10174+6E j
 seg000:01EA                 jmp     word ptr cs:[bx+0Ah] ; switch jump
 seg000:01EA ; ---------------------------------------------------------------------------
-seg000:01EE word_101EE      dw    1Bh,   34h,   36h,   4Bh ; DATA XREF: sub_10174+68o
+seg000:01EE word_101EE      dw    1Bh,   34h,   36h,   4Bh ; DATA XREF: sub_10174+68 o
 seg000:01EE                 dw    4Dh               ; value table for switch statement
 seg000:01F8                 dw offset bye_2         ; jump table for switch statement
 seg000:01F8                 dw offset maze_selector_left
@@ -343,42 +343,42 @@ seg000:01F8                 dw offset maze_selector_left
 seg000:01F8                 dw offset maze_selector_right
 seg000:0202 ; ---------------------------------------------------------------------------
 seg000:0202
-seg000:0202 maze_selector_right:                    ; CODE XREF: sub_10174:loc_101EAj
-seg000:0202                                         ; DATA XREF: sub_10174+84o
+seg000:0202 maze_selector_right:                    ; CODE XREF: sub_10174:loc_101EA j
+seg000:0202                                         ; DATA XREF: sub_10174+84 o
 seg000:0202                 cmp     si, 59          ; Number of levels
 seg000:0205                 jl      short loc_10209
 seg000:0207                 jmp     short maze_selector_loop
 seg000:0209 ; ---------------------------------------------------------------------------
 seg000:0209
-seg000:0209 loc_10209:                              ; CODE XREF: sub_10174+91j
+seg000:0209 loc_10209:                              ; CODE XREF: sub_10174+91 j
 seg000:0209                 inc     si
 seg000:020A                 jmp     short loc_1021C ; default
 seg000:020C ; ---------------------------------------------------------------------------
 seg000:020C
-seg000:020C maze_selector_left:                     ; CODE XREF: sub_10174:loc_101EAj
-seg000:020C                                         ; DATA XREF: sub_10174+84o
+seg000:020C maze_selector_left:                     ; CODE XREF: sub_10174:loc_101EA j
+seg000:020C                                         ; DATA XREF: sub_10174+84 o
 seg000:020C                 or      si, si          ; jumptable 000101EA cases 52,75
 seg000:020E                 jg      short loc_10213
 seg000:0210                 jmp     maze_selector_loop
 seg000:0213 ; ---------------------------------------------------------------------------
 seg000:0213
-seg000:0213 loc_10213:                              ; CODE XREF: sub_10174+9Aj
+seg000:0213 loc_10213:                              ; CODE XREF: sub_10174+9A j
 seg000:0213                 dec     si
 seg000:0214                 jmp     short loc_1021C ; default
 seg000:0216 ; ---------------------------------------------------------------------------
 seg000:0216
-seg000:0216 bye_2:                                  ; CODE XREF: sub_10174:loc_101EAj
-seg000:0216                                         ; DATA XREF: sub_10174+84o
+seg000:0216 bye_2:                                  ; CODE XREF: sub_10174:loc_101EA j
+seg000:0216                                         ; DATA XREF: sub_10174+84 o
 seg000:0216                 call    clear_screen    ; jumptable 000101EA case 27
 seg000:0219                 call    exit
 seg000:021C ; ---------------------------------------------------------------------------
 seg000:021C
-seg000:021C loc_1021C:                              ; CODE XREF: sub_10174+74j
-seg000:021C                                         ; sub_10174+96j ...
+seg000:021C loc_1021C:                              ; CODE XREF: sub_10174+74 j
+seg000:021C                                         ; sub_10174+96 j ...
 seg000:021C                 jmp     maze_selector_loop ; default
 seg000:021F ; ---------------------------------------------------------------------------
 seg000:021F
-seg000:021F start_game:                             ; CODE XREF: sub_10174+5Fj
+seg000:021F start_game:                             ; CODE XREF: sub_10174+5F j
 seg000:021F                 push    si
 seg000:0220                 call    print_level
 seg000:0223                 pop     cx
@@ -392,7 +392,7 @@ seg000:0238                 mov     [bp+var_x], 0
 seg000:023D                 jmp     short loc_10252
 seg000:023F ; ---------------------------------------------------------------------------
 seg000:023F
-seg000:023F loc_1023F:                              ; CODE XREF: sub_10174+E2j
+seg000:023F loc_1023F:                              ; CODE XREF: sub_10174+E2 j
 seg000:023F                 mov     ax, 24
 seg000:0242                 push    ax
 seg000:0243                 push    [bp+var_x]
@@ -402,7 +402,7 @@ seg000:0249                 call    draw_symbol_xy
 seg000:024C                 add     sp, 6
 seg000:024F                 inc     [bp+var_x]
 seg000:0252
-seg000:0252 loc_10252:                              ; CODE XREF: sub_10174+C9j
+seg000:0252 loc_10252:                              ; CODE XREF: sub_10174+C9 j
 seg000:0252                 cmp     [bp+var_x], 20
 seg000:0256                 jl      short loc_1023F
 seg000:0258                 mov     ax, si
@@ -447,14 +447,14 @@ seg000:02A5                 add     sp, 8
 seg000:02A8                 mov     [bp+var_14], 0
 seg000:02AD                 mov     [bp+var_12], 0
 seg000:02B2
-seg000:02B2 loc_102B2:                              ; CODE XREF: sub_10174:loc_103EFj
-seg000:02B2                                         ; sub_10174:loc_104BAj
+seg000:02B2 loc_102B2:                              ; CODE XREF: sub_10174:loc_103EF j
+seg000:02B2                                         ; sub_10174:loc_104BA j
 seg000:02B2                 cmp     number_of_places, 0
 seg000:02B7                 jnz     short loc_102BC
 seg000:02B9                 jmp     display_congratulations
 seg000:02BC ; ---------------------------------------------------------------------------
 seg000:02BC
-seg000:02BC loc_102BC:                              ; CODE XREF: sub_10174+143j
+seg000:02BC loc_102BC:                              ; CODE XREF: sub_10174+143 j
 seg000:02BC                 push    [bp+var_14]
 seg000:02BF                 mov     ax, offset aD   ; "%d"
 seg000:02C2                 push    ax
@@ -490,7 +490,7 @@ seg000:0301                 push    ax
 seg000:0302                 call    display_string
 seg000:0305                 add     sp, 8
 seg000:0308
-seg000:0308 loc_10308:                              ; CODE XREF: sub_10174+19Ej
+seg000:0308 loc_10308:                              ; CODE XREF: sub_10174+19E j
 seg000:0308                 call    keyin
 seg000:030B                 mov     [bp+key_code], al
 seg000:030E                 or      al, al
@@ -498,13 +498,13 @@ seg000:0310                 jnz     short loc_10314
 seg000:0312                 jmp     short loc_10308
 seg000:0314 ; ---------------------------------------------------------------------------
 seg000:0314
-seg000:0314 loc_10314:                              ; CODE XREF: sub_10174+19Cj
+seg000:0314 loc_10314:                              ; CODE XREF: sub_10174+19C j
 seg000:0314                 mov     al, [bp+key_code]
 seg000:0317                 cbw
 seg000:0318                 mov     cx, 0Ah         ; switch 10 cases
 seg000:031B                 mov     bx, offset word_1032E
 seg000:031E
-seg000:031E loc_1031E:                              ; CODE XREF: sub_10174+1B1j
+seg000:031E loc_1031E:                              ; CODE XREF: sub_10174+1B1 j
 seg000:031E                 cmp     ax, cs:[bx]
 seg000:0321                 jz      short loc_1032A
 seg000:0323                 inc     bx
@@ -513,10 +513,10 @@ seg000:0325                 loop    loc_1031E
 seg000:0327                 jmp     loc_103EF
 seg000:032A ; ---------------------------------------------------------------------------
 seg000:032A
-seg000:032A loc_1032A:                              ; CODE XREF: sub_10174+1ADj
+seg000:032A loc_1032A:                              ; CODE XREF: sub_10174+1AD j
 seg000:032A                 jmp     word ptr cs:[bx+14h] ; switch jump
 seg000:032A ; ---------------------------------------------------------------------------
-seg000:032E word_1032E      dw 1Bh                  ; DATA XREF: sub_10174+1A7o
+seg000:032E word_1032E      dw 1Bh                  ; DATA XREF: sub_10174+1A7 o
 seg000:032E                                         ; value table for switch statement
 seg000:0330                 dw 20h
 seg000:0332                 dw 32h
@@ -539,8 +539,8 @@ seg000:0342                 dw offset key_right
 seg000:0342                 dw offset key_down
 seg000:0356 ; ---------------------------------------------------------------------------
 seg000:0356
-seg000:0356 key_down:                               ; CODE XREF: sub_10174:loc_1032Aj
-seg000:0356                                         ; DATA XREF: sub_10174+1CEo
+seg000:0356 key_down:                               ; CODE XREF: sub_10174:loc_1032A j
+seg000:0356                                         ; DATA XREF: sub_10174+1CE o
 seg000:0356                 mov     ax, [bp+man_offset] ; jumptable 0001032A cases 50,80
 seg000:0359                 add     ax, level_size_x
 seg000:035D                 mov     [bp+next_offset], ax
@@ -557,8 +557,8 @@ seg000:0378                 mov     [bp+nex_nex_man_y], ax
 seg000:037B                 jmp     short loc_103F2
 seg000:037D ; ---------------------------------------------------------------------------
 seg000:037D
-seg000:037D key_up:                                 ; CODE XREF: sub_10174:loc_1032Aj
-seg000:037D                                         ; DATA XREF: sub_10174+1CEo
+seg000:037D key_up:                                 ; CODE XREF: sub_10174:loc_1032A j
+seg000:037D                                         ; DATA XREF: sub_10174+1CE o
 seg000:037D                 mov     ax, [bp+man_offset] ; jumptable 0001032A cases 56,72
 seg000:0380                 sub     ax, level_size_x
 seg000:0384                 mov     [bp+next_offset], ax
@@ -575,8 +575,8 @@ seg000:039F                 mov     [bp+nex_nex_man_y], ax
 seg000:03A2                 jmp     short loc_103F2
 seg000:03A4 ; ---------------------------------------------------------------------------
 seg000:03A4
-seg000:03A4 key_right:                              ; CODE XREF: sub_10174:loc_1032Aj
-seg000:03A4                                         ; DATA XREF: sub_10174+1CEo
+seg000:03A4 key_right:                              ; CODE XREF: sub_10174:loc_1032A j
+seg000:03A4                                         ; DATA XREF: sub_10174+1CE o
 seg000:03A4                 mov     ax, [bp+man_offset] ; jumptable 0001032A cases 54,77
 seg000:03A7                 inc     ax
 seg000:03A8                 mov     [bp+next_offset], ax
@@ -593,8 +593,8 @@ seg000:03C0                 mov     [bp+nex_nex_man_y], ax
 seg000:03C3                 jmp     short loc_103F2
 seg000:03C5 ; ---------------------------------------------------------------------------
 seg000:03C5
-seg000:03C5 key_left:                               ; CODE XREF: sub_10174:loc_1032Aj
-seg000:03C5                                         ; DATA XREF: sub_10174+1CEo
+seg000:03C5 key_left:                               ; CODE XREF: sub_10174:loc_1032A j
+seg000:03C5                                         ; DATA XREF: sub_10174+1CE o
 seg000:03C5                 mov     ax, [bp+man_offset] ; jumptable 0001032A cases 52,75
 seg000:03C8                 dec     ax
 seg000:03C9                 mov     [bp+next_offset], ax
@@ -611,23 +611,23 @@ seg000:03E1                 mov     [bp+nex_nex_man_y], ax
 seg000:03E4                 jmp     short loc_103F2
 seg000:03E6 ; ---------------------------------------------------------------------------
 seg000:03E6
-seg000:03E6 bye:                                    ; CODE XREF: sub_10174:loc_1032Aj
-seg000:03E6                                         ; DATA XREF: sub_10174+1CEo
+seg000:03E6 bye:                                    ; CODE XREF: sub_10174:loc_1032A j
+seg000:03E6                                         ; DATA XREF: sub_10174+1CE o
 seg000:03E6                 call    clear_screen    ; jumptable 0001032A case 27
 seg000:03E9                 call    exit
 seg000:03EC ; ---------------------------------------------------------------------------
 seg000:03EC
-seg000:03EC menu:                                   ; CODE XREF: sub_10174:loc_1032Aj
-seg000:03EC                                         ; DATA XREF: sub_10174+1CEo
+seg000:03EC menu:                                   ; CODE XREF: sub_10174:loc_1032A j
+seg000:03EC                                         ; DATA XREF: sub_10174+1CE o
 seg000:03EC                 jmp     loc_104F7       ; jumptable 0001032A case 32
 seg000:03EF ; ---------------------------------------------------------------------------
 seg000:03EF
-seg000:03EF loc_103EF:                              ; CODE XREF: sub_10174+1B3j
+seg000:03EF loc_103EF:                              ; CODE XREF: sub_10174+1B3 j
 seg000:03EF                 jmp     loc_102B2
 seg000:03F2 ; ---------------------------------------------------------------------------
 seg000:03F2
-seg000:03F2 loc_103F2:                              ; CODE XREF: sub_10174+207j
-seg000:03F2                                         ; sub_10174+22Ej ...
+seg000:03F2 loc_103F2:                              ; CODE XREF: sub_10174+207 j
+seg000:03F2                                         ; sub_10174+22E j ...
 seg000:03F2                 mov     bx, [bp+next_offset]
 seg000:03F5                 mov     al, [bx]
 seg000:03F7                 cbw
@@ -637,17 +637,17 @@ seg000:03FE                 jbe     short loc_10403
 seg000:0400                 jmp     loc_104BA       ; default
 seg000:0403 ; ---------------------------------------------------------------------------
 seg000:0403
-seg000:0403 loc_10403:                              ; CODE XREF: sub_10174+28Aj
+seg000:0403 loc_10403:                              ; CODE XREF: sub_10174+28A j
 seg000:0403                 mov     bx, ax
 seg000:0405                 shl     bx, 1
 seg000:0407                 jmp     cs:off_1040C[bx] ; switch jump
 seg000:0407 ; ---------------------------------------------------------------------------
-seg000:040C off_1040C       dw offset loc_10486     ; DATA XREF: sub_10174+293r
+seg000:040C off_1040C       dw offset loc_10486     ; DATA XREF: sub_10174+293 r
 seg000:040C                 dw offset loc_10410     ; jump table for switch statement
 seg000:0410 ; ---------------------------------------------------------------------------
 seg000:0410
-seg000:0410 loc_10410:                              ; CODE XREF: sub_10174+293j
-seg000:0410                                         ; DATA XREF: sub_10174:off_1040Co
+seg000:0410 loc_10410:                              ; CODE XREF: sub_10174+293 j
+seg000:0410                                         ; DATA XREF: sub_10174:off_1040C o
 seg000:0410                 mov     bx, [bp+nex_next_offset] ; jumptable 00010407 case 1
 seg000:0413                 mov     al, [bx]
 seg000:0415                 and     al, 3
@@ -661,13 +661,13 @@ seg000:042A                 test    byte ptr [bx], 4
 seg000:042D                 jz      short loc_10433
 seg000:042F                 inc     number_of_places
 seg000:0433
-seg000:0433 loc_10433:                              ; CODE XREF: sub_10174+2B9j
+seg000:0433 loc_10433:                              ; CODE XREF: sub_10174+2B9 j
 seg000:0433                 mov     bx, [bp+nex_next_offset]
 seg000:0436                 test    byte ptr [bx], 4
 seg000:0439                 jz      short loc_1043F
 seg000:043B                 dec     number_of_places
 seg000:043F
-seg000:043F loc_1043F:                              ; CODE XREF: sub_10174+2C5j
+seg000:043F loc_1043F:                              ; CODE XREF: sub_10174+2C5 j
 seg000:043F                 push    [bp+nex_nex_man_y]
 seg000:0442                 push    [bp+next_next_man_x]
 seg000:0445                 mov     ax, 1
@@ -694,13 +694,13 @@ seg000:047B                 mov     man_y, ax
 seg000:047E                 mov     ax, [bp+next_offset]
 seg000:0481                 mov     [bp+man_offset], ax
 seg000:0484
-seg000:0484 loc_10484:                              ; CODE XREF: sub_10174+2ABj
-seg000:0484                                         ; sub_10174+2B1j
+seg000:0484 loc_10484:                              ; CODE XREF: sub_10174+2AB j
+seg000:0484                                         ; sub_10174+2B1 j
 seg000:0484                 jmp     short loc_104BA ; default
 seg000:0486 ; ---------------------------------------------------------------------------
 seg000:0486
-seg000:0486 loc_10486:                              ; CODE XREF: sub_10174+293j
-seg000:0486                                         ; DATA XREF: sub_10174:off_1040Co
+seg000:0486 loc_10486:                              ; CODE XREF: sub_10174+293 j
+seg000:0486                                         ; DATA XREF: sub_10174:off_1040C o
 seg000:0486                 push    man_y           ; jumptable 00010407 case 0
 seg000:048A                 push    man_x
 seg000:048E                 xor     ax, ax
@@ -721,12 +721,12 @@ seg000:04B2                 mov     ax, [bp+next_offset]
 seg000:04B5                 mov     [bp+man_offset], ax
 seg000:04B8                 jmp     short $+2
 seg000:04BA
-seg000:04BA loc_104BA:                              ; CODE XREF: sub_10174+28Cj
-seg000:04BA                                         ; sub_10174:loc_10484j
+seg000:04BA loc_104BA:                              ; CODE XREF: sub_10174+28C j
+seg000:04BA                                         ; sub_10174:loc_10484 j
 seg000:04BA                 jmp     loc_102B2       ; default
 seg000:04BD ; ---------------------------------------------------------------------------
 seg000:04BD
-seg000:04BD display_congratulations:                ; CODE XREF: sub_10174+145j
+seg000:04BD display_congratulations:                ; CODE XREF: sub_10174+145 j
 seg000:04BD                 push    man_y
 seg000:04C1                 push    man_x
 seg000:04C5                 mov     ax, 8
@@ -751,7 +751,7 @@ seg000:04F0                 add     sp, 8
 seg000:04F3                 call    keyin
 seg000:04F6                 inc     si
 seg000:04F7
-seg000:04F7 loc_104F7:                              ; CODE XREF: sub_10174:menuj
+seg000:04F7 loc_104F7:                              ; CODE XREF: sub_10174:menu j
 seg000:04F7                 call    clear_screen
 seg000:04FA                 jmp     maze_selector
 seg000:04FA sub_10174       endp
@@ -767,8 +767,8 @@ seg000:0503 ; =============== S U B R O U T I N E ==============================
 seg000:0503
 seg000:0503 ; Attributes: bp-based frame
 seg000:0503
-seg000:0503 get_draw_char_xy proc near              ; CODE XREF: sub_10174+2D5p
-seg000:0503                                         ; sub_10174+2E6p ...
+seg000:0503 get_draw_char_xy proc near              ; CODE XREF: sub_10174+2D5 p
+seg000:0503                                         ; sub_10174+2E6 p ...
 seg000:0503
 seg000:0503 arg_0           = word ptr  4
 seg000:0503 arg_x           = word ptr  6
@@ -800,8 +800,8 @@ seg000:0530 ; =============== S U B R O U T I N E ==============================
 seg000:0530
 seg000:0530 ; Attributes: bp-based frame
 seg000:0530
-seg000:0530 put_draw_char_xy proc near              ; CODE XREF: get_draw_char_xy+26p
-seg000:0530                                         ; print_level+9Bp ...
+seg000:0530 put_draw_char_xy proc near              ; CODE XREF: get_draw_char_xy+26 p
+seg000:0530                                         ; print_level+9B p ...
 seg000:0530
 seg000:0530 arg_ch          = word ptr  4
 seg000:0530 arg_x           = word ptr  6
@@ -833,8 +833,8 @@ seg000:055B ; =============== S U B R O U T I N E ==============================
 seg000:055B
 seg000:055B ; Attributes: bp-based frame
 seg000:055B
-seg000:055B draw_symbol_center_xy proc near         ; CODE XREF: sub_10174+355p
-seg000:055B                                         ; put_draw_char_xy+24p
+seg000:055B draw_symbol_center_xy proc near         ; CODE XREF: sub_10174+355 p
+seg000:055B                                         ; put_draw_char_xy+24 p
 seg000:055B
 seg000:055B arg_char        = word ptr  4
 seg000:055B arg_x           = word ptr  6
@@ -869,7 +869,7 @@ seg000:058C ; =============== S U B R O U T I N E ==============================
 seg000:058C
 seg000:058C ; Attributes: bp-based frame
 seg000:058C
-seg000:058C draw_symbol_xy  proc near               ; CODE XREF: sub_10174+D5p
+seg000:058C draw_symbol_xy  proc near               ; CODE XREF: sub_10174+D5 p
 seg000:058C
 seg000:058C arg_char        = word ptr  4
 seg000:058C arg_x           = word ptr  6
@@ -899,7 +899,7 @@ seg000:05B3
 seg000:05B3 ; =============== S U B R O U T I N E =======================================
 seg000:05B3
 seg000:05B3
-seg000:05B3 no_cursor       proc near               ; CODE XREF: print_level+7p
+seg000:05B3 no_cursor       proc near               ; CODE XREF: print_level+7 p
 seg000:05B3                 call    clear_screen
 seg000:05B6                 retn
 seg000:05B6 no_cursor       endp
@@ -909,7 +909,7 @@ seg000:05B7 ; =============== S U B R O U T I N E ==============================
 seg000:05B7
 seg000:05B7 ; Attributes: bp-based frame
 seg000:05B7
-seg000:05B7 print_level     proc near               ; CODE XREF: sub_10174+ACp
+seg000:05B7 print_level     proc near               ; CODE XREF: sub_10174+AC p
 seg000:05B7
 seg000:05B7 var_current_char= byte ptr -2
 seg000:05B7 var_place_char  = byte ptr -1
@@ -963,12 +963,12 @@ seg000:0631                 xor     di, di
 seg000:0633                 jmp     short loc_10660
 seg000:0635 ; ---------------------------------------------------------------------------
 seg000:0635
-seg000:0635 loc_10635:                              ; CODE XREF: print_level+ADj
+seg000:0635 loc_10635:                              ; CODE XREF: print_level+AD j
 seg000:0635                 xor     si, si
 seg000:0637                 jmp     short loc_10659
 seg000:0639 ; ---------------------------------------------------------------------------
 seg000:0639
-seg000:0639 loc_10639:                              ; CODE XREF: print_level+A6j
+seg000:0639 loc_10639:                              ; CODE XREF: print_level+A6 j
 seg000:0639                 call    next_level_char
 seg000:063C                 mov     [bp+var_current_char], al
 seg000:063F                 mov     al, [bp+var_current_char]
@@ -976,7 +976,7 @@ seg000:0642                 cmp     al, [bp+var_place_char]
 seg000:0645                 jnz     short loc_1064B
 seg000:0647                 inc     number_of_places
 seg000:064B
-seg000:064B loc_1064B:                              ; CODE XREF: print_level+8Ej
+seg000:064B loc_1064B:                              ; CODE XREF: print_level+8E j
 seg000:064B                 push    di
 seg000:064C                 push    si
 seg000:064D                 mov     al, [bp+var_current_char]
@@ -986,12 +986,12 @@ seg000:0652                 call    put_draw_char_xy
 seg000:0655                 add     sp, 6
 seg000:0658                 inc     si
 seg000:0659
-seg000:0659 loc_10659:                              ; CODE XREF: print_level+80j
+seg000:0659 loc_10659:                              ; CODE XREF: print_level+80 j
 seg000:0659                 cmp     si, level_size_x
 seg000:065D                 jl      short loc_10639
 seg000:065F                 inc     di
 seg000:0660
-seg000:0660 loc_10660:                              ; CODE XREF: print_level+7Cj
+seg000:0660 loc_10660:                              ; CODE XREF: print_level+7C j
 seg000:0660                 cmp     di, level_size_y
 seg000:0664                 jl      short loc_10635
 seg000:0666                 mov     bx, level_address
@@ -1021,7 +1021,7 @@ seg000:069A
 seg000:069A ; =============== S U B R O U T I N E =======================================
 seg000:069A
 seg000:069A
-seg000:069A next_level_char proc near               ; CODE XREF: print_level:loc_10639p
+seg000:069A next_level_char proc near               ; CODE XREF: print_level:loc_10639 p
 seg000:069A                 mov     ax, word_127BE
 seg000:069D                 dec     word_127BE
 seg000:06A1                 or      ax, ax
@@ -1030,7 +1030,7 @@ seg000:06A5                 mov     al, byte ptr word_127B2
 seg000:06A8                 jmp     locret_10727
 seg000:06AB ; ---------------------------------------------------------------------------
 seg000:06AB
-seg000:06AB loc_106AB:                              ; CODE XREF: next_level_char+9j
+seg000:06AB loc_106AB:                              ; CODE XREF: next_level_char+9 j
 seg000:06AB                 call    sub_10728
 seg000:06AE                 or      al, al
 seg000:06B0                 jz      short loc_106D8
@@ -1050,10 +1050,10 @@ seg000:06D2                 add     word_127BE, ax
 seg000:06D6                 jmp     short loc_106DE
 seg000:06D8 ; ---------------------------------------------------------------------------
 seg000:06D8
-seg000:06D8 loc_106D8:                              ; CODE XREF: next_level_char+16j
+seg000:06D8 loc_106D8:                              ; CODE XREF: next_level_char+16 j
 seg000:06D8                 mov     word_127BE, 1
 seg000:06DE
-seg000:06DE loc_106DE:                              ; CODE XREF: next_level_char+3Cj
+seg000:06DE loc_106DE:                              ; CODE XREF: next_level_char+3C j
 seg000:06DE                 call    sub_10728
 seg000:06E1                 or      al, al
 seg000:06E3                 jz      short loc_1070B
@@ -1067,21 +1067,21 @@ seg000:06F3                 mov     word_127B2, 5
 seg000:06F9                 jmp     short loc_10701
 seg000:06FB ; ---------------------------------------------------------------------------
 seg000:06FB
-seg000:06FB loc_106FB:                              ; CODE XREF: next_level_char+57j
+seg000:06FB loc_106FB:                              ; CODE XREF: next_level_char+57 j
 seg000:06FB                 mov     word_127B2, 4
 seg000:0701
-seg000:0701 loc_10701:                              ; CODE XREF: next_level_char+5Fj
+seg000:0701 loc_10701:                              ; CODE XREF: next_level_char+5F j
 seg000:0701                 jmp     short loc_10709
 seg000:0703 ; ---------------------------------------------------------------------------
 seg000:0703
-seg000:0703 loc_10703:                              ; CODE XREF: next_level_char+50j
+seg000:0703 loc_10703:                              ; CODE XREF: next_level_char+50 j
 seg000:0703                 mov     word_127B2, 1
 seg000:0709
-seg000:0709 loc_10709:                              ; CODE XREF: next_level_char:loc_10701j
+seg000:0709 loc_10709:                              ; CODE XREF: next_level_char:loc_10701 j
 seg000:0709                 jmp     short loc_10720
 seg000:070B ; ---------------------------------------------------------------------------
 seg000:070B
-seg000:070B loc_1070B:                              ; CODE XREF: next_level_char+49j
+seg000:070B loc_1070B:                              ; CODE XREF: next_level_char+49 j
 seg000:070B                 call    sub_10728
 seg000:070E                 or      al, al
 seg000:0710                 jz      short loc_1071A
@@ -1089,15 +1089,15 @@ seg000:0712                 mov     word_127B2, 2
 seg000:0718                 jmp     short loc_10720
 seg000:071A ; ---------------------------------------------------------------------------
 seg000:071A
-seg000:071A loc_1071A:                              ; CODE XREF: next_level_char+76j
+seg000:071A loc_1071A:                              ; CODE XREF: next_level_char+76 j
 seg000:071A                 mov     word_127B2, 0
 seg000:0720
-seg000:0720 loc_10720:                              ; CODE XREF: next_level_char:loc_10709j
-seg000:0720                                         ; next_level_char+7Ej
+seg000:0720 loc_10720:                              ; CODE XREF: next_level_char:loc_10709 j
+seg000:0720                                         ; next_level_char+7E j
 seg000:0720                 dec     word_127BE
 seg000:0724                 mov     al, byte ptr word_127B2
 seg000:0727
-seg000:0727 locret_10727:                           ; CODE XREF: next_level_char+Ej
+seg000:0727 locret_10727:                           ; CODE XREF: next_level_char+E j
 seg000:0727                 retn
 seg000:0727 next_level_char endp
 seg000:0727
@@ -1105,8 +1105,8 @@ seg000:0728
 seg000:0728 ; =============== S U B R O U T I N E =======================================
 seg000:0728
 seg000:0728
-seg000:0728 sub_10728       proc near               ; CODE XREF: next_level_char:loc_106ABp
-seg000:0728                                         ; next_level_char+1Ep ...
+seg000:0728 sub_10728       proc near               ; CODE XREF: next_level_char:loc_106AB p
+seg000:0728                                         ; next_level_char+1E p ...
 seg000:0728                 dec     word_127BA
 seg000:072C                 jge     short loc_10742
 seg000:072E                 mov     bx, level_address
@@ -1116,7 +1116,7 @@ seg000:0735                 mov     word_127B4, ax
 seg000:0738                 inc     level_address
 seg000:073C                 mov     word_127BA, 7
 seg000:0742
-seg000:0742 loc_10742:                              ; CODE XREF: sub_10728+4j
+seg000:0742 loc_10742:                              ; CODE XREF: sub_10728+4 j
 seg000:0742                 mov     ax, word_127B4
 seg000:0745                 mov     bx, word_127BA
 seg000:0749                 shl     bx, 1
@@ -1128,12 +1128,12 @@ seg000:0755 ; ------------------------------------------------------------------
 seg000:0755                 jmp     short locret_1075B
 seg000:0757 ; ---------------------------------------------------------------------------
 seg000:0757
-seg000:0757 loc_10757:                              ; CODE XREF: sub_10728+27j
+seg000:0757 loc_10757:                              ; CODE XREF: sub_10728+27 j
 seg000:0757                 mov     al, 0
 seg000:0759                 jmp     short $+2
 seg000:075B
-seg000:075B locret_1075B:                           ; CODE XREF: sub_10728+2Bj
-seg000:075B                                         ; sub_10728+2Dj
+seg000:075B locret_1075B:                           ; CODE XREF: sub_10728+2B j
+seg000:075B                                         ; sub_10728+2D j
 seg000:075B                 retn
 seg000:075B sub_10728       endp
 seg000:075B
@@ -1142,8 +1142,8 @@ seg000:075C ; =============== S U B R O U T I N E ==============================
 seg000:075C
 seg000:075C ; Attributes: bp-based frame
 seg000:075C
-seg000:075C display_string  proc near               ; CODE XREF: sub_10174+1Dp
-seg000:075C                                         ; sub_10174+45p ...
+seg000:075C display_string  proc near               ; CODE XREF: sub_10174+1D p
+seg000:075C                                         ; sub_10174+45 p ...
 seg000:075C
 seg000:075C var_unused      = byte ptr -2
 seg000:075C current_char    = byte ptr -1
@@ -1157,7 +1157,7 @@ seg000:075D                 mov     bp, sp
 seg000:075F                 dec     sp
 seg000:0760                 dec     sp
 seg000:0761
-seg000:0761 display_string_loop:                    ; CODE XREF: display_string+30j
+seg000:0761 display_string_loop:                    ; CODE XREF: display_string+30 j
 seg000:0761                 mov     bx, [bp+string_ptr]
 seg000:0764                 inc     [bp+string_ptr]
 seg000:0767                 mov     al, [bx]
@@ -1181,7 +1181,7 @@ seg000:078B                 pop     cx
 seg000:078C                 jmp     short display_string_loop
 seg000:078E ; ---------------------------------------------------------------------------
 seg000:078E
-seg000:078E display_string_exit:                    ; CODE XREF: display_string+12j
+seg000:078E display_string_exit:                    ; CODE XREF: display_string+12 j
 seg000:078E                 mov     sp, bp
 seg000:0790                 pop     bp
 seg000:0791                 retn
@@ -1191,8 +1191,8 @@ seg000:0792
 seg000:0792 ; =============== S U B R O U T I N E =======================================
 seg000:0792
 seg000:0792
-seg000:0792 clear_screen    proc near               ; CODE XREF: sub_10174+Ap
-seg000:0792                                         ; sub_10174:bye_2p ...
+seg000:0792 clear_screen    proc near               ; CODE XREF: sub_10174+A p
+seg000:0792                                         ; sub_10174:bye_2 p ...
 seg000:0792                 mov     ah, 0
 seg000:0794                 mov     al, 1
 seg000:0796                 int     10h             ; - VIDEO - SET VIDEO MODE
@@ -1211,8 +1211,8 @@ seg000:07A0 ; =============== S U B R O U T I N E ==============================
 seg000:07A0
 seg000:07A0 ; Attributes: bp-based frame
 seg000:07A0
-seg000:07A0 put_char_color  proc near               ; CODE XREF: draw_symbol_center_xy+2Ap
-seg000:07A0                                         ; draw_symbol_xy+20p ...
+seg000:07A0 put_char_color  proc near               ; CODE XREF: draw_symbol_center_xy+2A p
+seg000:07A0                                         ; draw_symbol_xy+20 p ...
 seg000:07A0
 seg000:07A0 arg_ch          = byte ptr  4
 seg000:07A0 arg_color       = byte ptr  6
@@ -1240,8 +1240,8 @@ seg000:07B8 ; =============== S U B R O U T I N E ==============================
 seg000:07B8
 seg000:07B8 ; Attributes: bp-based frame
 seg000:07B8
-seg000:07B8 set_cursor      proc near               ; CODE XREF: draw_symbol_center_xy+13p
-seg000:07B8                                         ; draw_symbol_xy+9p ...
+seg000:07B8 set_cursor      proc near               ; CODE XREF: draw_symbol_center_xy+13 p
+seg000:07B8                                         ; draw_symbol_xy+9 p ...
 seg000:07B8
 seg000:07B8 arg_0           = byte ptr  4
 seg000:07B8 arg_2           = byte ptr  6
@@ -1269,7 +1269,7 @@ seg000:07D5                 mov     ax, 1
 seg000:07D8                 jmp     short loc_107ED
 seg000:07DA ; ---------------------------------------------------------------------------
 seg000:07DA
-seg000:07DA loc_107DA:                              ; CODE XREF: seg000:07D3j
+seg000:07DA loc_107DA:                              ; CODE XREF: seg000:07D3 j
 seg000:07DA                 mov     ax, [bp+4]
 seg000:07DD                 mov     bx, word ptr unk_1269A
 seg000:07E1                 shl     bx, 1
@@ -1277,7 +1277,7 @@ seg000:07E3                 mov     word_127C0[bx], ax
 seg000:07E7                 inc     word ptr unk_1269A
 seg000:07EB                 xor     ax, ax
 seg000:07ED
-seg000:07ED loc_107ED:                              ; CODE XREF: seg000:07D8j
+seg000:07ED loc_107ED:                              ; CODE XREF: seg000:07D8 j
 seg000:07ED                 pop     bp
 seg000:07EE                 retn
 seg000:07EF
@@ -1285,7 +1285,7 @@ seg000:07EF ; =============== S U B R O U T I N E ==============================
 seg000:07EF
 seg000:07EF ; Attributes: bp-based frame
 seg000:07EF
-seg000:07EF sub_107EF       proc near               ; CODE XREF: sub_1083D+6p
+seg000:07EF sub_107EF       proc near               ; CODE XREF: sub_1083D+6 p
 seg000:07EF
 seg000:07EF arg_0           = word ptr  4
 seg000:07EF
@@ -1300,11 +1300,11 @@ seg000:07FF                 mov     off_1121C, ax
 seg000:0802                 jmp     short loc_1080D
 seg000:0804 ; ---------------------------------------------------------------------------
 seg000:0804
-seg000:0804 loc_10804:                              ; CODE XREF: sub_107EF+Ej
+seg000:0804 loc_10804:                              ; CODE XREF: sub_107EF+E j
 seg000:0804                 mov     word_11218, 8
 seg000:080A                 mov     ax, 0FFFFh
 seg000:080D
-seg000:080D loc_1080D:                              ; CODE XREF: sub_107EF+13j
+seg000:080D loc_1080D:                              ; CODE XREF: sub_107EF+13 j
 seg000:080D                 pop     bp
 seg000:080E                 retn
 seg000:080E sub_107EF       endp
@@ -1314,8 +1314,8 @@ seg000:080F ; =============== S U B R O U T I N E ==============================
 seg000:080F
 seg000:080F ; Attributes: bp-based frame
 seg000:080F
-seg000:080F sub_1080F       proc near               ; CODE XREF: seg000:084Fp
-seg000:080F                                         ; free+6Ep ...
+seg000:080F sub_1080F       proc near               ; CODE XREF: seg000:084F p
+seg000:080F                                         ; free+6E p ...
 seg000:080F
 seg000:080F arg_0           = word ptr  4
 seg000:080F
@@ -1328,7 +1328,7 @@ seg000:081A                 jnb     short loc_10820
 seg000:081C                 or      dx, dx
 seg000:081E                 jns     short loc_10832
 seg000:0820
-seg000:0820 loc_10820:                              ; CODE XREF: sub_1080F+Bj
+seg000:0820 loc_10820:                              ; CODE XREF: sub_1080F+B j
 seg000:0820                 mov     cx, ax
 seg000:0822                 add     cx, 100h
 seg000:0826                 jb      short loc_10832
@@ -1338,12 +1338,12 @@ seg000:082C                 xchg    ax, off_1121C
 seg000:0830                 jmp     short loc_1083B
 seg000:0832 ; ---------------------------------------------------------------------------
 seg000:0832
-seg000:0832 loc_10832:                              ; CODE XREF: sub_1080F+Fj
-seg000:0832                                         ; sub_1080F+17j ...
+seg000:0832 loc_10832:                              ; CODE XREF: sub_1080F+F j
+seg000:0832                                         ; sub_1080F+17 j ...
 seg000:0832                 mov     word_11218, 8
 seg000:0838                 mov     ax, 0FFFFh
 seg000:083B
-seg000:083B loc_1083B:                              ; CODE XREF: sub_1080F+21j
+seg000:083B loc_1083B:                              ; CODE XREF: sub_1080F+21 j
 seg000:083B                 pop     bp
 seg000:083C                 retn
 seg000:083C sub_1080F       endp
@@ -1353,7 +1353,7 @@ seg000:083D ; =============== S U B R O U T I N E ==============================
 seg000:083D
 seg000:083D ; Attributes: bp-based frame
 seg000:083D
-seg000:083D sub_1083D       proc near               ; CODE XREF: free+8Fp
+seg000:083D sub_1083D       proc near               ; CODE XREF: free+8F p
 seg000:083D
 seg000:083D arg_0           = word ptr  4
 seg000:083D
@@ -1379,8 +1379,8 @@ seg000:0855 ; =============== S U B R O U T I N E ==============================
 seg000:0855
 seg000:0855 ; Attributes: noreturn
 seg000:0855
-seg000:0855 sub_10855       proc near               ; CODE XREF: sub_10B50j
-seg000:0855                                         ; DATA XREF: dseg:off_12780o
+seg000:0855 sub_10855       proc near               ; CODE XREF: sub_10B50 j
+seg000:0855                                         ; DATA XREF: dseg:off_12780 o
 seg000:0855                 mov     cx, 2Ch ; ','
 seg000:0858                 nop
 seg000:0859                 mov     dx, 150Ch
@@ -1391,7 +1391,7 @@ seg000:0861                 nop
 seg000:0862                 mov     dx, (offset aPrintfFloatingPointFormats+2Ch)
 seg000:0865                 jmp     short $+2
 seg000:0867
-seg000:0867 loc_10867:                              ; CODE XREF: sub_10855+7j
+seg000:0867 loc_10867:                              ; CODE XREF: sub_10855+7 j
 seg000:0867                 mov     ah, 40h ; '@'
 seg000:0869                 mov     bx, 2
 seg000:086C                 int     21h             ; DOS - 2+ - WRITE TO FILE WITH HANDLE
@@ -1403,8 +1403,8 @@ seg000:0871
 seg000:0871 ; =============== S U B R O U T I N E =======================================
 seg000:0871
 seg000:0871
-seg000:0871 sub_10871       proc far                ; CODE XREF: start+94p
-seg000:0871                                         ; sub_1010B+Fp
+seg000:0871 sub_10871       proc far                ; CODE XREF: start+94 p
+seg000:0871                                         ; sub_1010B+F p
 seg000:0871                                         ; DATA XREF: ...
 seg000:0871                 mov     word_1121A, 0
 seg000:0877                 retf
@@ -1416,15 +1416,15 @@ seg000:0879 ; =============== S U B R O U T I N E ==============================
 seg000:0879
 seg000:0879 ; Attributes: noreturn bp-based frame
 seg000:0879
-seg000:0879 exit            proc near               ; CODE XREF: start+108p
-seg000:0879                                         ; sub_10174+A5p ...
+seg000:0879 exit            proc near               ; CODE XREF: start+108 p
+seg000:0879                                         ; sub_10174+A5 p ...
 seg000:0879
 seg000:0879 arg_0           = word ptr  4
 seg000:0879
 seg000:0879                 push    bp
 seg000:087A                 mov     bp, sp
 seg000:087C
-seg000:087C loc_1087C:                              ; CODE XREF: exit+18j
+seg000:087C loc_1087C:                              ; CODE XREF: exit+18 j
 seg000:087C                 mov     ax, word ptr unk_1269A
 seg000:087F                 dec     word ptr unk_1269A
 seg000:0883                 or      ax, ax
@@ -1435,7 +1435,7 @@ seg000:088D                 call    word ptr [bx+1630h]
 seg000:0891                 jmp     short loc_1087C
 seg000:0893 ; ---------------------------------------------------------------------------
 seg000:0893
-seg000:0893 loc_10893:                              ; CODE XREF: exit+Cj
+seg000:0893 loc_10893:                              ; CODE XREF: exit+C j
 seg000:0893                 call    word_126F4
 seg000:0897                 call    word_126F6
 seg000:089B                 call    word_126F8
@@ -1452,7 +1452,7 @@ seg000:08A8 ; =============== S U B R O U T I N E ==============================
 seg000:08A8
 seg000:08A8 ; Attributes: bp-based frame
 seg000:08A8
-seg000:08A8 free            proc near               ; CODE XREF: sub_10174+362p
+seg000:08A8 free            proc near               ; CODE XREF: sub_10174+362 p
 seg000:08A8
 seg000:08A8 arg_0           = word ptr  8
 seg000:08A8
@@ -1466,8 +1466,8 @@ seg000:08B3                 mov     si, word ptr unk_12700
 seg000:08B7                 jmp     short loc_108CE
 seg000:08B9 ; ---------------------------------------------------------------------------
 seg000:08B9
-seg000:08B9 loc_108B9:                              ; CODE XREF: free+28j
-seg000:08B9                                         ; free+2Fj
+seg000:08B9 loc_108B9:                              ; CODE XREF: free+28 j
+seg000:08B9                                         ; free+2F j
 seg000:08B9                 mov     ax, [si+2]
 seg000:08BC                 cmp     ax, si
 seg000:08BE                 ja      short loc_108CB
@@ -1477,18 +1477,18 @@ seg000:08C4                 mov     ax, [si+2]
 seg000:08C7                 cmp     ax, di
 seg000:08C9                 ja      short loc_108D9
 seg000:08CB
-seg000:08CB loc_108CB:                              ; CODE XREF: free+16j
+seg000:08CB loc_108CB:                              ; CODE XREF: free+16 j
 seg000:08CB                 mov     si, [si+2]
 seg000:08CE
-seg000:08CE loc_108CE:                              ; CODE XREF: free+Fj
+seg000:08CE loc_108CE:                              ; CODE XREF: free+F j
 seg000:08CE                 cmp     di, si
 seg000:08D0                 jbe     short loc_108B9
 seg000:08D2                 mov     ax, [si+2]
 seg000:08D5                 cmp     ax, di
 seg000:08D7                 jbe     short loc_108B9
 seg000:08D9
-seg000:08D9 loc_108D9:                              ; CODE XREF: free+1Aj
-seg000:08D9                                         ; free+21j
+seg000:08D9 loc_108D9:                              ; CODE XREF: free+1A j
+seg000:08D9                                         ; free+21 j
 seg000:08D9                 mov     ax, [di]
 seg000:08DB                 add     ax, di
 seg000:08DD                 cmp     ax, [si+2]
@@ -1502,11 +1502,11 @@ seg000:08EF                 mov     [di+2], ax
 seg000:08F2                 jmp     short loc_108FA
 seg000:08F4 ; ---------------------------------------------------------------------------
 seg000:08F4
-seg000:08F4 loc_108F4:                              ; CODE XREF: free+38j
+seg000:08F4 loc_108F4:                              ; CODE XREF: free+38 j
 seg000:08F4                 mov     ax, [si+2]
 seg000:08F7                 mov     [di+2], ax
 seg000:08FA
-seg000:08FA loc_108FA:                              ; CODE XREF: free+4Aj
+seg000:08FA loc_108FA:                              ; CODE XREF: free+4A j
 seg000:08FA                 mov     ax, [si]
 seg000:08FC                 add     ax, si
 seg000:08FE                 cmp     ax, di
@@ -1519,10 +1519,10 @@ seg000:090C                 mov     di, si
 seg000:090E                 jmp     short loc_10913
 seg000:0910 ; ---------------------------------------------------------------------------
 seg000:0910
-seg000:0910 loc_10910:                              ; CODE XREF: free+58j
+seg000:0910 loc_10910:                              ; CODE XREF: free+58 j
 seg000:0910                 mov     [si+2], di
 seg000:0913
-seg000:0913 loc_10913:                              ; CODE XREF: free+66j
+seg000:0913 loc_10913:                              ; CODE XREF: free+66 j
 seg000:0913                 xor     ax, ax
 seg000:0915                 push    ax
 seg000:0916                 call    sub_1080F
@@ -1535,10 +1535,10 @@ seg000:0922                 mov     si, di
 seg000:0924                 jmp     short loc_10929
 seg000:0926 ; ---------------------------------------------------------------------------
 seg000:0926
-seg000:0926 loc_10926:                              ; CODE XREF: free+86j
+seg000:0926 loc_10926:                              ; CODE XREF: free+86 j
 seg000:0926                 mov     si, [si+2]
 seg000:0929
-seg000:0929 loc_10929:                              ; CODE XREF: free+7Cj
+seg000:0929 loc_10929:                              ; CODE XREF: free+7C j
 seg000:0929                 mov     ax, [si+2]
 seg000:092C                 cmp     ax, di
 seg000:092E                 jnz     short loc_10926
@@ -1548,7 +1548,7 @@ seg000:0936                 push    di
 seg000:0937                 call    sub_1083D
 seg000:093A                 pop     cx
 seg000:093B
-seg000:093B loc_1093B:                              ; CODE XREF: free+78j
+seg000:093B loc_1093B:                              ; CODE XREF: free+78 j
 seg000:093B                 mov     word ptr unk_12700, si
 seg000:093F                 pop     bp
 seg000:0940                 pop     di
@@ -1560,15 +1560,15 @@ seg000:0943
 seg000:0943 ; =============== S U B R O U T I N E =======================================
 seg000:0943
 seg000:0943
-seg000:0943 keyin           proc near               ; CODE XREF: sub_10174+4Bp
-seg000:0943                                         ; sub_10174:loc_10308p ...
+seg000:0943 keyin           proc near               ; CODE XREF: sub_10174+4B p
+seg000:0943                                         ; sub_10174:loc_10308 p ...
 seg000:0943                 mov     ax, 700h
 seg000:0946                 xchg    al, byte ptr unk_126FA
 seg000:094A                 or      al, al
 seg000:094C                 jnz     short loc_10950
 seg000:094E                 int     21h             ; DOS - DIRECT STDIN INPUT, NO ECHO
 seg000:0950
-seg000:0950 loc_10950:                              ; CODE XREF: keyin+9j
+seg000:0950 loc_10950:                              ; CODE XREF: keyin+9 j
 seg000:0950                 xor     ah, ah
 seg000:0952                 retn
 seg000:0952 keyin           endp
@@ -1581,7 +1581,7 @@ seg000:095C                 jnz     short loc_10960
 seg000:095E                 int     21h             ; DOS - KEYBOARD INPUT
 seg000:095E                                         ; Return: AL = character read
 seg000:0960
-seg000:0960 loc_10960:                              ; CODE XREF: seg000:095Cj
+seg000:0960 loc_10960:                              ; CODE XREF: seg000:095C j
 seg000:0960                 xor     ah, ah
 seg000:0962                 retn
 seg000:0963 ; ---------------------------------------------------------------------------
@@ -1593,12 +1593,12 @@ seg000:096D                 mov     ax, 0FFFFh
 seg000:0970                 jmp     short loc_1097A
 seg000:0972 ; ---------------------------------------------------------------------------
 seg000:0972
-seg000:0972 loc_10972:                              ; CODE XREF: seg000:096Bj
+seg000:0972 loc_10972:                              ; CODE XREF: seg000:096B j
 seg000:0972                 mov     al, [bp+4]
 seg000:0975                 mov     byte ptr unk_126FA, al
 seg000:0978                 xor     ah, ah
 seg000:097A
-seg000:097A loc_1097A:                              ; CODE XREF: seg000:0970j
+seg000:097A loc_1097A:                              ; CODE XREF: seg000:0970 j
 seg000:097A                 pop     bp
 seg000:097B                 retn
 seg000:097C
@@ -1606,8 +1606,8 @@ seg000:097C ; =============== S U B R O U T I N E ==============================
 seg000:097C
 seg000:097C ; Attributes: bp-based frame
 seg000:097C
-seg000:097C sub_1097C       proc near               ; CODE XREF: seg000:0A1Bp
-seg000:097C                                         ; seg000:0A35p ...
+seg000:097C sub_1097C       proc near               ; CODE XREF: seg000:0A1B p
+seg000:097C                                         ; seg000:0A35 p ...
 seg000:097C
 seg000:097C var_22          = byte ptr -22h
 seg000:097C arg_0           = byte ptr  8
@@ -1644,12 +1644,12 @@ seg000:09AB                 neg     cx
 seg000:09AD                 neg     ax
 seg000:09AF                 sbb     cx, 0
 seg000:09B2
-seg000:09B2 loc_109B2:                              ; CODE XREF: sub_1097C+23j
-seg000:09B2                                         ; sub_1097C+29j
+seg000:09B2 loc_109B2:                              ; CODE XREF: sub_1097C+23 j
+seg000:09B2                                         ; sub_1097C+29 j
 seg000:09B2                 lea     si, [bp+var_22]
 seg000:09B5                 jcxz    short loc_109C6
 seg000:09B7
-seg000:09B7 loc_109B7:                              ; CODE XREF: sub_1097C+48j
+seg000:09B7 loc_109B7:                              ; CODE XREF: sub_1097C+48 j
 seg000:09B7                 xchg    ax, cx
 seg000:09B8                 sub     dx, dx
 seg000:09BA                 div     bx
@@ -1661,14 +1661,14 @@ seg000:09C2                 jcxz    short loc_109CD
 seg000:09C4                 jmp     short loc_109B7
 seg000:09C6 ; ---------------------------------------------------------------------------
 seg000:09C6
-seg000:09C6 loc_109C6:                              ; CODE XREF: sub_1097C+39j
-seg000:09C6                                         ; sub_1097C+53j
+seg000:09C6 loc_109C6:                              ; CODE XREF: sub_1097C+39 j
+seg000:09C6                                         ; sub_1097C+53 j
 seg000:09C6                 sub     dx, dx
 seg000:09C8                 div     bx
 seg000:09CA                 mov     [si], dl
 seg000:09CC                 inc     si
 seg000:09CD
-seg000:09CD loc_109CD:                              ; CODE XREF: sub_1097C+46j
+seg000:09CD loc_109CD:                              ; CODE XREF: sub_1097C+46 j
 seg000:09CD                 or      ax, ax
 seg000:09CF                 jnz     short loc_109C6
 seg000:09D1                 lea     cx, [bp+var_22]
@@ -1676,7 +1676,7 @@ seg000:09D4                 neg     cx
 seg000:09D6                 add     cx, si
 seg000:09D8                 cld
 seg000:09D9
-seg000:09D9 loc_109D9:                              ; CODE XREF: sub_1097C+6Cj
+seg000:09D9 loc_109D9:                              ; CODE XREF: sub_1097C+6C j
 seg000:09D9                 dec     si
 seg000:09DA                 mov     al, [si]
 seg000:09DC                 sub     al, 0Ah
@@ -1685,15 +1685,15 @@ seg000:09E0                 add     al, 3Ah ; ':'
 seg000:09E2                 jmp     short loc_109E7
 seg000:09E4 ; ---------------------------------------------------------------------------
 seg000:09E4
-seg000:09E4 loc_109E4:                              ; CODE XREF: sub_1097C+62j
+seg000:09E4 loc_109E4:                              ; CODE XREF: sub_1097C+62 j
 seg000:09E4                 add     al, [bp+arg_0]
 seg000:09E7
-seg000:09E7 loc_109E7:                              ; CODE XREF: sub_1097C+66j
+seg000:09E7 loc_109E7:                              ; CODE XREF: sub_1097C+66 j
 seg000:09E7                 stosb
 seg000:09E8                 loop    loc_109D9
 seg000:09EA
-seg000:09EA loc_109EA:                              ; CODE XREF: sub_1097C+14j
-seg000:09EA                                         ; sub_1097C+19j
+seg000:09EA loc_109EA:                              ; CODE XREF: sub_1097C+14 j
+seg000:09EA                                         ; sub_1097C+19 j
 seg000:09EA                 mov     al, 0
 seg000:09EC                 stosb
 seg000:09ED                 pop     es
@@ -1716,11 +1716,11 @@ seg000:0A05                 cwd
 seg000:0A06                 jmp     short loc_10A0D
 seg000:0A08 ; ---------------------------------------------------------------------------
 seg000:0A08
-seg000:0A08 loc_10A08:                              ; CODE XREF: seg000:0A00j
+seg000:0A08 loc_10A08:                              ; CODE XREF: seg000:0A00 j
 seg000:0A08                 mov     ax, [bp+4]
 seg000:0A0B                 xor     dx, dx
 seg000:0A0D
-seg000:0A0D loc_10A0D:                              ; CODE XREF: seg000:0A06j
+seg000:0A0D loc_10A0D:                              ; CODE XREF: seg000:0A06 j
 seg000:0A0D                 push    dx
 seg000:0A0E                 push    ax
 seg000:0A0F                 push    word ptr [bp+6]
@@ -1759,10 +1759,10 @@ seg000:0A4F                 mov     ax, 1
 seg000:0A52                 jmp     short loc_10A56
 seg000:0A54 ; ---------------------------------------------------------------------------
 seg000:0A54
-seg000:0A54 loc_10A54:                              ; CODE XREF: seg000:0A4Dj
+seg000:0A54 loc_10A54:                              ; CODE XREF: seg000:0A4D j
 seg000:0A54                 xor     ax, ax
 seg000:0A56
-seg000:0A56 loc_10A56:                              ; CODE XREF: seg000:0A52j
+seg000:0A56 loc_10A56:                              ; CODE XREF: seg000:0A52 j
 seg000:0A56                 push    ax
 seg000:0A57                 mov     al, 61h ; 'a'
 seg000:0A59                 push    ax
@@ -1774,8 +1774,8 @@ seg000:0A5F ; =============== S U B R O U T I N E ==============================
 seg000:0A5F
 seg000:0A5F ; Attributes: bp-based frame
 seg000:0A5F
-seg000:0A5F malloc          proc near               ; CODE XREF: print_level+3Dp
-seg000:0A5F                                         ; sub_10C43+5p ...
+seg000:0A5F malloc          proc near               ; CODE XREF: print_level+3D p
+seg000:0A5F                                         ; sub_10C43+5 p ...
 seg000:0A5F
 seg000:0A5F var_4           = word ptr -4
 seg000:0A5F var_2           = word ptr -2
@@ -1794,7 +1794,7 @@ seg000:0A74                 mov     [bp+var_4], ax
 seg000:0A77                 mov     bx, ax
 seg000:0A79                 mov     si, [bx+2]
 seg000:0A7C
-seg000:0A7C loc_10A7C:                              ; CODE XREF: malloc+57j
+seg000:0A7C loc_10A7C:                              ; CODE XREF: malloc+57 j
 seg000:0A7C                 mov     ax, [si]
 seg000:0A7E                 cmp     ax, di
 seg000:0A80                 jb      short loc_10AAA
@@ -1809,20 +1809,20 @@ seg000:0A93                 mov     [bx+2], ax
 seg000:0A96                 jmp     short loc_10AA2
 seg000:0A98 ; ---------------------------------------------------------------------------
 seg000:0A98
-seg000:0A98 loc_10A98:                              ; CODE XREF: malloc+2Cj
+seg000:0A98 loc_10A98:                              ; CODE XREF: malloc+2C j
 seg000:0A98                 sub     [si], di
 seg000:0A9A                 mov     ax, [si]
 seg000:0A9C                 add     ax, si
 seg000:0A9E                 mov     si, ax
 seg000:0AA0                 mov     [si], di
 seg000:0AA2
-seg000:0AA2 loc_10AA2:                              ; CODE XREF: malloc+37j
+seg000:0AA2 loc_10AA2:                              ; CODE XREF: malloc+37 j
 seg000:0AA2                 mov     ax, [bp+var_4]
 seg000:0AA5                 mov     word ptr unk_12700, ax
 seg000:0AA8                 jmp     short loc_10ACE
 seg000:0AAA ; ---------------------------------------------------------------------------
 seg000:0AAA
-seg000:0AAA loc_10AAA:                              ; CODE XREF: malloc+21j
+seg000:0AAA loc_10AAA:                              ; CODE XREF: malloc+21 j
 seg000:0AAA                 cmp     si, word ptr unk_12700
 seg000:0AAE                 jz      short loc_10AB8
 seg000:0AB0                 mov     [bp+var_4], si
@@ -1830,7 +1830,7 @@ seg000:0AB3                 mov     si, [si+2]
 seg000:0AB6                 jmp     short loc_10A7C
 seg000:0AB8 ; ---------------------------------------------------------------------------
 seg000:0AB8
-seg000:0AB8 loc_10AB8:                              ; CODE XREF: malloc+4Fj
+seg000:0AB8 loc_10AB8:                              ; CODE XREF: malloc+4F j
 seg000:0AB8                 push    di
 seg000:0AB9                 call    sub_1080F
 seg000:0ABC                 pop     cx
@@ -1841,15 +1841,15 @@ seg000:0AC5                 xor     ax, ax
 seg000:0AC7                 jmp     short loc_10AD3
 seg000:0AC9 ; ---------------------------------------------------------------------------
 seg000:0AC9
-seg000:0AC9 loc_10AC9:                              ; CODE XREF: malloc+64j
+seg000:0AC9 loc_10AC9:                              ; CODE XREF: malloc+64 j
 seg000:0AC9                 mov     si, [bp+var_2]
 seg000:0ACC                 mov     [si], di
 seg000:0ACE
-seg000:0ACE loc_10ACE:                              ; CODE XREF: malloc+49j
+seg000:0ACE loc_10ACE:                              ; CODE XREF: malloc+49 j
 seg000:0ACE                 mov     ax, si
 seg000:0AD0                 add     ax, 2
 seg000:0AD3
-seg000:0AD3 loc_10AD3:                              ; CODE XREF: malloc+68j
+seg000:0AD3 loc_10AD3:                              ; CODE XREF: malloc+68 j
 seg000:0AD3                 mov     sp, bp
 seg000:0AD5                 pop     bp
 seg000:0AD6                 pop     di
@@ -1862,7 +1862,7 @@ seg000:0AD9 ; =============== S U B R O U T I N E ==============================
 seg000:0AD9
 seg000:0AD9 ; Attributes: bp-based frame
 seg000:0AD9
-seg000:0AD9 sub_10AD9       proc near               ; CODE XREF: seg000:0C9Bp
+seg000:0AD9 sub_10AD9       proc near               ; CODE XREF: seg000:0C9B p
 seg000:0AD9
 seg000:0AD9 arg_0           = word ptr  4
 seg000:0AD9 arg_2           = word ptr  6
@@ -1885,8 +1885,8 @@ seg000:0AEF ; =============== S U B R O U T I N E ==============================
 seg000:0AEF
 seg000:0AEF ; Attributes: bp-based frame
 seg000:0AEF
-seg000:0AEF sub_10AEF       proc near               ; CODE XREF: sub_10AD9+Cp
-seg000:0AEF                                         ; seg000:0B46p
+seg000:0AEF sub_10AEF       proc near               ; CODE XREF: sub_10AD9+C p
+seg000:0AEF                                         ; seg000:0B46 p
 seg000:0AEF
 seg000:0AEF arg_0           = word ptr  8
 seg000:0AEF arg_2           = word ptr  0Ah
@@ -1904,11 +1904,11 @@ seg000:0AFD                 mov     ax, 1
 seg000:0B00                 jmp     short loc_10B05
 seg000:0B02 ; ---------------------------------------------------------------------------
 seg000:0B02
-seg000:0B02 loc_10B02:                              ; CODE XREF: sub_10AEF+Bj
+seg000:0B02 loc_10B02:                              ; CODE XREF: sub_10AEF+B j
 seg000:0B02                 cld
 seg000:0B03                 xor     ax, ax
 seg000:0B05
-seg000:0B05 loc_10B05:                              ; CODE XREF: sub_10AEF+11j
+seg000:0B05 loc_10B05:                              ; CODE XREF: sub_10AEF+11 j
 seg000:0B05                 mov     si, [bp+arg_0]
 seg000:0B08                 mov     di, [bp+arg_2]
 seg000:0B0B                 mov     cx, ds
@@ -1922,14 +1922,14 @@ seg000:0B18                 dec     si
 seg000:0B19                 add     di, cx
 seg000:0B1B                 dec     di
 seg000:0B1C
-seg000:0B1C loc_10B1C:                              ; CODE XREF: sub_10AEF+25j
+seg000:0B1C loc_10B1C:                              ; CODE XREF: sub_10AEF+25 j
 seg000:0B1C                 test    di, 1
 seg000:0B20                 jz      short loc_10B26
 seg000:0B22                 jcxz    short loc_10B35
 seg000:0B24                 movsb
 seg000:0B25                 dec     cx
 seg000:0B26
-seg000:0B26 loc_10B26:                              ; CODE XREF: sub_10AEF+31j
+seg000:0B26 loc_10B26:                              ; CODE XREF: sub_10AEF+31 j
 seg000:0B26                 sub     si, ax
 seg000:0B28                 sub     di, ax
 seg000:0B2A                 shr     cx, 1
@@ -1939,8 +1939,8 @@ seg000:0B30                 add     si, ax
 seg000:0B32                 add     di, ax
 seg000:0B34                 movsb
 seg000:0B35
-seg000:0B35 loc_10B35:                              ; CODE XREF: sub_10AEF+33j
-seg000:0B35                                         ; sub_10AEF+3Fj
+seg000:0B35 loc_10B35:                              ; CODE XREF: sub_10AEF+33 j
+seg000:0B35                                         ; sub_10AEF+3F j
 seg000:0B35                 cld
 seg000:0B36                 pop     bp
 seg000:0B37                 pop     di
@@ -1964,21 +1964,21 @@ seg000:0B50 ; =============== S U B R O U T I N E ==============================
 seg000:0B50
 seg000:0B50 ; Attributes: thunk
 seg000:0B50
-seg000:0B50 sub_10B50       proc near               ; CODE XREF: printf+2C1p
+seg000:0B50 sub_10B50       proc near               ; CODE XREF: printf+2C1 p
 seg000:0B50                 jmp     off_12780
 seg000:0B50 sub_10B50       endp
 seg000:0B50
 seg000:0B50 ; ---------------------------------------------------------------------------
-seg000:0B54 word_10B54      dw 0                    ; DATA XREF: sub_10B5Aw
-seg000:0B54                                         ; sub_10B5A+E4r
-seg000:0B56 word_10B56      dw 0                    ; DATA XREF: sub_10B5A+5w
-seg000:0B56                                         ; sub_10B5A+DFr
+seg000:0B54 word_10B54      dw 0                    ; DATA XREF: sub_10B5A w
+seg000:0B54                                         ; sub_10B5A+E4 r
+seg000:0B56 word_10B56      dw 0                    ; DATA XREF: sub_10B5A+5 w
+seg000:0B56                                         ; sub_10B5A+DF r
 seg000:0B58                 db 2 dup(0)
 seg000:0B5A
 seg000:0B5A ; =============== S U B R O U T I N E =======================================
 seg000:0B5A
 seg000:0B5A
-seg000:0B5A sub_10B5A       proc near               ; CODE XREF: start+E1p
+seg000:0B5A sub_10B5A       proc near               ; CODE XREF: start+E1 p
 seg000:0B5A
 seg000:0B5A ; FUNCTION CHUNK AT seg000:0BC2 SIZE 00000081 BYTES
 seg000:0B5A
@@ -1999,23 +1999,23 @@ seg000:0B79                 mov     es:[bx+di], al
 seg000:0B7C                 inc     bx
 seg000:0B7D                 xchg    bx, cx
 seg000:0B7F
-seg000:0B7F loc_10B7F:                              ; CODE XREF: sub_10B5A+37j
-seg000:0B7F                                         ; sub_10B5A+3Bj
+seg000:0B7F loc_10B7F:                              ; CODE XREF: sub_10B5A+37 j
+seg000:0B7F                                         ; sub_10B5A+3B j
 seg000:0B7F                 call    sub_10B97
 seg000:0B82                 ja      short loc_10B8B
 seg000:0B84
-seg000:0B84 loc_10B84:                              ; CODE XREF: sub_10B5A+2Fj
+seg000:0B84 loc_10B84:                              ; CODE XREF: sub_10B5A+2F j
 seg000:0B84                 jb      short loc_10BC5
 seg000:0B86                 call    sub_10B97
 seg000:0B89                 ja      short loc_10B84
 seg000:0B8B
-seg000:0B8B loc_10B8B:                              ; CODE XREF: sub_10B5A+28j
+seg000:0B8B loc_10B8B:                              ; CODE XREF: sub_10B5A+28 j
 seg000:0B8B                 cmp     al, 20h ; ' '
 seg000:0B8D                 jz      short loc_10B93
 seg000:0B8F                 cmp     al, 9
 seg000:0B91                 jnz     short loc_10B7F
 seg000:0B93
-seg000:0B93 loc_10B93:                              ; CODE XREF: sub_10B5A+33j
+seg000:0B93 loc_10B93:                              ; CODE XREF: sub_10B5A+33 j
 seg000:0B93                 xor     al, al
 seg000:0B95                 jmp     short loc_10B7F
 seg000:0B95 sub_10B5A       endp ; sp-analysis failed
@@ -2024,8 +2024,8 @@ seg000:0B97
 seg000:0B97 ; =============== S U B R O U T I N E =======================================
 seg000:0B97
 seg000:0B97
-seg000:0B97 sub_10B97       proc near               ; CODE XREF: sub_10B5A:loc_10B7Fp
-seg000:0B97                                         ; sub_10B5A+2Cp
+seg000:0B97 sub_10B97       proc near               ; CODE XREF: sub_10B5A:loc_10B7F p
+seg000:0B97                                         ; sub_10B5A+2C p
 seg000:0B97                 or      ax, ax
 seg000:0B99                 jz      short loc_10BA2
 seg000:0B9B                 inc     dx
@@ -2034,8 +2034,8 @@ seg000:0B9D                 or      al, al
 seg000:0B9F                 jnz     short loc_10BA2
 seg000:0BA1                 inc     bx
 seg000:0BA2
-seg000:0BA2 loc_10BA2:                              ; CODE XREF: sub_10B97+2j
-seg000:0BA2                                         ; sub_10B97+8j
+seg000:0BA2 loc_10BA2:                              ; CODE XREF: sub_10B97+2 j
+seg000:0BA2                                         ; sub_10B97+8 j
 seg000:0BA2                 xchg    ah, al
 seg000:0BA4                 xor     al, al
 seg000:0BA6                 stc
@@ -2052,23 +2052,23 @@ seg000:0BBA                 jnz     short loc_10BBF
 seg000:0BBC                 lods    byte ptr es:[si]
 seg000:0BBE                 dec     cx
 seg000:0BBF
-seg000:0BBF loc_10BBF:                              ; CODE XREF: sub_10B97+1Dj
-seg000:0BBF                                         ; sub_10B97+23j
+seg000:0BBF loc_10BBF:                              ; CODE XREF: sub_10B97+1D j
+seg000:0BBF                                         ; sub_10B97+23 j
 seg000:0BBF                 or      si, si
 seg000:0BC1
-seg000:0BC1 locret_10BC1:                           ; CODE XREF: sub_10B97+10j
-seg000:0BC1                                         ; sub_10B97+17j
+seg000:0BC1 locret_10BC1:                           ; CODE XREF: sub_10B97+10 j
+seg000:0BC1                                         ; sub_10B97+17 j
 seg000:0BC1                 retn
 seg000:0BC1 sub_10B97       endp
 seg000:0BC1
 seg000:0BC2 ; ---------------------------------------------------------------------------
 seg000:0BC2 ; START OF FUNCTION CHUNK FOR sub_10B5A
 seg000:0BC2
-seg000:0BC2 loc_10BC2:                              ; CODE XREF: sub_10B5A+88j
+seg000:0BC2 loc_10BC2:                              ; CODE XREF: sub_10B5A+88 j
 seg000:0BC2                 jmp     abort
 seg000:0BC5 ; ---------------------------------------------------------------------------
 seg000:0BC5
-seg000:0BC5 loc_10BC5:                              ; CODE XREF: sub_10B5A:loc_10B84j
+seg000:0BC5 loc_10BC5:                              ; CODE XREF: sub_10B5A:loc_10B84 j
 seg000:0BC5                 mov     bp, es
 seg000:0BC7                 mov     si, word_1120E
 seg000:0BCB                 add     si, 2
@@ -2082,7 +2082,7 @@ seg000:0BE0                 repne scasb
 seg000:0BE2                 jcxz    short loc_10BC2
 seg000:0BE4                 xor     cl, 7Fh
 seg000:0BE7
-seg000:0BE7 loc_10BE7:                              ; CODE XREF: sub_10B5A+7Cj
+seg000:0BE7 loc_10BE7:                              ; CODE XREF: sub_10B5A+7C j
 seg000:0BE7                 inc     bx
 seg000:0BE8                 mov     word_11208, bx
 seg000:0BEC                 inc     bx
@@ -2112,19 +2112,19 @@ seg000:0C1D                 mov     ds, bx
 seg000:0C1F                 xchg    cx, dx
 seg000:0C21                 mov     si, 81h ; 'Å'
 seg000:0C24
-seg000:0C24 loc_10C24:                              ; CODE XREF: sub_10B5A+D8j
+seg000:0C24 loc_10C24:                              ; CODE XREF: sub_10B5A+D8 j
 seg000:0C24                 jcxz    short loc_10C34
 seg000:0C26                 mov     [bp+0], di
 seg000:0C29                 add     bp, 2
 seg000:0C2C
-seg000:0C2C loc_10C2C:                              ; CODE XREF: sub_10B5A+D6j
+seg000:0C2C loc_10C2C:                              ; CODE XREF: sub_10B5A+D6 j
 seg000:0C2C                 lodsb
 seg000:0C2D                 or      al, al
 seg000:0C2F                 stosb
 seg000:0C30                 loopne  loc_10C2C
 seg000:0C32                 jz      short loc_10C24
 seg000:0C34
-seg000:0C34 loc_10C34:                              ; CODE XREF: sub_10B5A:loc_10C24j
+seg000:0C34 loc_10C34:                              ; CODE XREF: sub_10B5A:loc_10C24 j
 seg000:0C34                 xor     ax, ax
 seg000:0C36                 mov     [bp+0], ax
 seg000:0C39                 mov     ds, cs:word_10B56
@@ -2134,7 +2134,7 @@ seg000:0C43
 seg000:0C43 ; =============== S U B R O U T I N E =======================================
 seg000:0C43
 seg000:0C43
-seg000:0C43 sub_10C43       proc near               ; CODE XREF: start+E4p
+seg000:0C43 sub_10C43       proc near               ; CODE XREF: start+E4 p
 seg000:0C43                 mov     cx, word_1120E
 seg000:0C47                 push    cx
 seg000:0C48                 call    malloc
@@ -2162,15 +2162,15 @@ seg000:0C6F                 mov     word_1120C, ax
 seg000:0C72                 or      ax, ax
 seg000:0C74                 jnz     short loc_10C79
 seg000:0C76
-seg000:0C76 loc_10C76:                              ; CODE XREF: sub_10C43+Dj
+seg000:0C76 loc_10C76:                              ; CODE XREF: sub_10C43+D j
 seg000:0C76                 jmp     abort
 seg000:0C79 ; ---------------------------------------------------------------------------
 seg000:0C79
-seg000:0C79 loc_10C79:                              ; CODE XREF: sub_10C43+31j
+seg000:0C79 loc_10C79:                              ; CODE XREF: sub_10C43+31 j
 seg000:0C79                 xor     ax, ax
 seg000:0C7B                 mov     cx, 0FFFFh
 seg000:0C7E
-seg000:0C7E loc_10C7E:                              ; CODE XREF: sub_10C43+45j
+seg000:0C7E loc_10C7E:                              ; CODE XREF: sub_10C43+45 j
 seg000:0C7E                 mov     [bx], di
 seg000:0C80                 add     bx, 2
 seg000:0C83                 repne scasb
@@ -2202,8 +2202,8 @@ seg000:0CB3 ; =============== S U B R O U T I N E ==============================
 seg000:0CB3
 seg000:0CB3 ; Attributes: bp-based frame
 seg000:0CB3
-seg000:0CB3 sprintf         proc near               ; CODE XREF: sub_10174+2Fp
-seg000:0CB3                                         ; sub_10174+F0p ...
+seg000:0CB3 sprintf         proc near               ; CODE XREF: sub_10174+2F p
+seg000:0CB3                                         ; sub_10174+F0 p ...
 seg000:0CB3
 seg000:0CB3 arg_0           = word ptr  4
 seg000:0CB3 arg_2           = word ptr  6
@@ -2244,8 +2244,8 @@ seg000:0CEC ; =============== S U B R O U T I N E ==============================
 seg000:0CEC
 seg000:0CEC ; Attributes: bp-based frame
 seg000:0CEC
-seg000:0CEC sub_10CEC       proc near               ; CODE XREF: printf+214p
-seg000:0CEC                                         ; printf+21Cp
+seg000:0CEC sub_10CEC       proc near               ; CODE XREF: printf+214 p
+seg000:0CEC                                         ; printf+21C p
 seg000:0CEC
 seg000:0CEC arg_0           = word ptr  4
 seg000:0CEC
@@ -2280,8 +2280,8 @@ seg000:0D15 ; =============== S U B R O U T I N E ==============================
 seg000:0D15
 seg000:0D15 ; Attributes: bp-based frame
 seg000:0D15
-seg000:0D15 printf          proc near               ; CODE XREF: sprintf+18p
-seg000:0D15                                         ; seg000:0CE7p
+seg000:0D15 printf          proc near               ; CODE XREF: sprintf+18 p
+seg000:0D15                                         ; seg000:0CE7 p
 seg000:0D15
 seg000:0D15 var_88          = word ptr -88h
 seg000:0D15 var_86          = byte ptr -86h
@@ -2314,21 +2314,21 @@ seg000:0D28                 cld
 seg000:0D29                 lea     di, [bp+var_50]
 seg000:0D2C                 mov     [bp+var_88], di
 seg000:0D30
-seg000:0D30 loc_10D30:                              ; CODE XREF: printf+401j
+seg000:0D30 loc_10D30:                              ; CODE XREF: printf+401 j
 seg000:0D30                 mov     di, [bp+var_88]
 seg000:0D34
-seg000:0D34 loc_10D34:                              ; CODE XREF: printf:loc_110EBj
+seg000:0D34 loc_10D34:                              ; CODE XREF: printf:loc_110EB j
 seg000:0D34                 mov     si, [bp+arg_2]
 seg000:0D37
-seg000:0D37 loc_10D37:                              ; CODE XREF: printf+31j
-seg000:0D37                                         ; printf+39j
+seg000:0D37 loc_10D37:                              ; CODE XREF: printf+31 j
+seg000:0D37                                         ; printf+39 j
 seg000:0D37                 lodsb
 seg000:0D38                 or      al, al
 seg000:0D3A                 jz      short loc_10D50
 seg000:0D3C                 cmp     al, 25h ; '%'
 seg000:0D3E                 jz      short loc_10D53
 seg000:0D40
-seg000:0D40 loc_10D40:                              ; CODE XREF: printf+44j
+seg000:0D40 loc_10D40:                              ; CODE XREF: printf+44 j
 seg000:0D40                 mov     [di], al
 seg000:0D42                 inc     di
 seg000:0D43                 dec     [bp+var_51]
@@ -2339,11 +2339,11 @@ seg000:0D4E ; ------------------------------------------------------------------
 seg000:0D4E                 jmp     short loc_10D37
 seg000:0D50 ; ---------------------------------------------------------------------------
 seg000:0D50
-seg000:0D50 loc_10D50:                              ; CODE XREF: printf+25j
+seg000:0D50 loc_10D50:                              ; CODE XREF: printf+25 j
 seg000:0D50                 jmp     loc_1112D
 seg000:0D53 ; ---------------------------------------------------------------------------
 seg000:0D53
-seg000:0D53 loc_10D53:                              ; CODE XREF: printf+29j
+seg000:0D53 loc_10D53:                              ; CODE XREF: printf+29 j
 seg000:0D53                 mov     [bp+var_7C], si
 seg000:0D56                 lodsb
 seg000:0D57                 cmp     al, 25h ; '%'
@@ -2358,11 +2358,11 @@ seg000:0D70                 mov     [bp+var_82], 0FFFFh
 seg000:0D76                 jmp     short loc_10D79
 seg000:0D78 ; ---------------------------------------------------------------------------
 seg000:0D78
-seg000:0D78 loc_10D78:                              ; CODE XREF: printf+C1j
-seg000:0D78                                         ; printf+CCj ...
+seg000:0D78 loc_10D78:                              ; CODE XREF: printf+C1 j
+seg000:0D78                                         ; printf+CC j ...
 seg000:0D78                 lodsb
 seg000:0D79
-seg000:0D79 loc_10D79:                              ; CODE XREF: printf+61j
+seg000:0D79 loc_10D79:                              ; CODE XREF: printf+61 j
 seg000:0D79                 cbw
 seg000:0D7A                 mov     dx, ax
 seg000:0D7C                 xchg    ax, bx
@@ -2377,12 +2377,12 @@ seg000:0D90                 jmp     loc_11119       ; default
 seg000:0D90                                         ; jumptable 00010D97 cases 18-20
 seg000:0D93 ; ---------------------------------------------------------------------------
 seg000:0D93
-seg000:0D93 loc_10D93:                              ; CODE XREF: printf+79j
+seg000:0D93 loc_10D93:                              ; CODE XREF: printf+79 j
 seg000:0D93                 mov     bx, ax
 seg000:0D95                 shl     bx, 1
 seg000:0D97                 jmp     cs:off_10D9C[bx] ; switch jump
 seg000:0D97 ; ---------------------------------------------------------------------------
-seg000:0D9C off_10D9C       dw offset loc_10DE3     ; DATA XREF: printf+82r
+seg000:0D9C off_10D9C       dw offset loc_10DE3     ; DATA XREF: printf+82 r
 seg000:0D9C                 dw offset loc_10DCD     ; jump table for switch statement
 seg000:0D9C                 dw offset loc_10E21
 seg000:0D9C                 dw offset loc_10DD8
@@ -2407,30 +2407,30 @@ seg000:0D9C                 dw offset loc_10DF3
 seg000:0D9C                 dw offset loc_10DFF
 seg000:0DCA ; ---------------------------------------------------------------------------
 seg000:0DCA
-seg000:0DCA loc_10DCA:                              ; CODE XREF: printf+6Ej
-seg000:0DCA                                         ; printf+BBj ...
+seg000:0DCA loc_10DCA:                              ; CODE XREF: printf+6E j
+seg000:0DCA                                         ; printf+BB j ...
 seg000:0DCA                 jmp     loc_11119       ; default
 seg000:0DCA                                         ; jumptable 00010D97 cases 18-20
 seg000:0DCD ; ---------------------------------------------------------------------------
 seg000:0DCD
-seg000:0DCD loc_10DCD:                              ; CODE XREF: printf+82j
-seg000:0DCD                                         ; DATA XREF: printf:off_10D9Co
+seg000:0DCD loc_10DCD:                              ; CODE XREF: printf+82 j
+seg000:0DCD                                         ; DATA XREF: printf:off_10D9C o
 seg000:0DCD                 cmp     ch, 0           ; jumptable 00010D97 case 1
 seg000:0DD0                 ja      short loc_10DCA
 seg000:0DD2                 or      [bp+var_80], 1
 seg000:0DD6                 jmp     short loc_10D78
 seg000:0DD8 ; ---------------------------------------------------------------------------
 seg000:0DD8
-seg000:0DD8 loc_10DD8:                              ; CODE XREF: printf+82j
-seg000:0DD8                                         ; DATA XREF: printf:off_10D9Co
+seg000:0DD8 loc_10DD8:                              ; CODE XREF: printf+82 j
+seg000:0DD8                                         ; DATA XREF: printf:off_10D9C o
 seg000:0DD8                 cmp     ch, 0           ; jumptable 00010D97 case 3
 seg000:0DDB                 ja      short loc_10DCA
 seg000:0DDD                 or      [bp+var_80], 2
 seg000:0DE1                 jmp     short loc_10D78
 seg000:0DE3 ; ---------------------------------------------------------------------------
 seg000:0DE3
-seg000:0DE3 loc_10DE3:                              ; CODE XREF: printf+82j
-seg000:0DE3                                         ; DATA XREF: printf:off_10D9Co
+seg000:0DE3 loc_10DE3:                              ; CODE XREF: printf+82 j
+seg000:0DE3                                         ; DATA XREF: printf:off_10D9C o
 seg000:0DE3                 cmp     ch, 0           ; jumptable 00010D97 case 0
 seg000:0DE6                 ja      short loc_10DCA
 seg000:0DE8                 cmp     [bp+var_7F], 2Bh ; '+'
@@ -2439,24 +2439,24 @@ seg000:0DEE                 mov     [bp+var_7F], dl
 seg000:0DF1                 jmp     short loc_10D78
 seg000:0DF3 ; ---------------------------------------------------------------------------
 seg000:0DF3
-seg000:0DF3 loc_10DF3:                              ; CODE XREF: printf+82j
-seg000:0DF3                                         ; DATA XREF: printf:off_10D9Co
+seg000:0DF3 loc_10DF3:                              ; CODE XREF: printf+82 j
+seg000:0DF3                                         ; DATA XREF: printf:off_10D9C o
 seg000:0DF3                 cmp     ch, 0           ; jumptable 00010D97 case 21
 seg000:0DF6                 ja      short loc_10E1E
 seg000:0DF8                 and     [bp+var_80], 0DFh
 seg000:0DFC                 jmp     loc_10D78
 seg000:0DFF ; ---------------------------------------------------------------------------
 seg000:0DFF
-seg000:0DFF loc_10DFF:                              ; CODE XREF: printf+82j
-seg000:0DFF                                         ; DATA XREF: printf:off_10D9Co
+seg000:0DFF loc_10DFF:                              ; CODE XREF: printf+82 j
+seg000:0DFF                                         ; DATA XREF: printf:off_10D9C o
 seg000:0DFF                 cmp     ch, 0           ; jumptable 00010D97 case 22
 seg000:0E02                 ja      short loc_10E1E
 seg000:0E04                 or      [bp+var_80], 20h
 seg000:0E08                 jmp     loc_10D78
 seg000:0E0B ; ---------------------------------------------------------------------------
 seg000:0E0B
-seg000:0E0B loc_10E0B:                              ; CODE XREF: printf+82j
-seg000:0E0B                                         ; DATA XREF: printf:off_10D9Co
+seg000:0E0B loc_10E0B:                              ; CODE XREF: printf+82 j
+seg000:0E0B                                         ; DATA XREF: printf:off_10D9C o
 seg000:0E0B                 cmp     ch, 0           ; jumptable 00010D97 case 8
 seg000:0E0E                 ja      short loc_10E4E ; jumptable 00010D97 case 5
 seg000:0E10                 test    [bp+var_80], 2
@@ -2466,14 +2466,14 @@ seg000:0E1A                 mov     ch, 1
 seg000:0E1C                 jmp     short loc_10E35
 seg000:0E1E ; ---------------------------------------------------------------------------
 seg000:0E1E
-seg000:0E1E loc_10E1E:                              ; CODE XREF: printf+E1j
-seg000:0E1E                                         ; printf+EDj ...
+seg000:0E1E loc_10E1E:                              ; CODE XREF: printf+E1 j
+seg000:0E1E                                         ; printf+ED j ...
 seg000:0E1E                 jmp     loc_11119       ; default
 seg000:0E1E                                         ; jumptable 00010D97 cases 18-20
 seg000:0E21 ; ---------------------------------------------------------------------------
 seg000:0E21
-seg000:0E21 loc_10E21:                              ; CODE XREF: printf+82j
-seg000:0E21                                         ; DATA XREF: printf:off_10D9Co
+seg000:0E21 loc_10E21:                              ; CODE XREF: printf+82 j
+seg000:0E21                                         ; DATA XREF: printf:off_10D9C o
 seg000:0E21                 mov     di, [bp+arg_0]  ; jumptable 00010D97 case 2
 seg000:0E24                 mov     ax, [di]
 seg000:0E26                 add     [bp+arg_0], 2
@@ -2482,12 +2482,12 @@ seg000:0E2D                 jnb     short loc_10E38
 seg000:0E2F                 mov     [bp+var_84], ax
 seg000:0E33                 mov     ch, 3
 seg000:0E35
-seg000:0E35 loc_10E35:                              ; CODE XREF: printf+FFj
-seg000:0E35                                         ; printf+107j ...
+seg000:0E35 loc_10E35:                              ; CODE XREF: printf+FF j
+seg000:0E35                                         ; printf+107 j ...
 seg000:0E35                 jmp     loc_10D78
 seg000:0E38 ; ---------------------------------------------------------------------------
 seg000:0E38
-seg000:0E38 loc_10E38:                              ; CODE XREF: printf+118j
+seg000:0E38 loc_10E38:                              ; CODE XREF: printf+118 j
 seg000:0E38                 cmp     ch, 4
 seg000:0E3B                 jnz     short loc_10E1E
 seg000:0E3D                 mov     [bp+var_82], ax
@@ -2495,16 +2495,16 @@ seg000:0E41                 inc     ch
 seg000:0E43                 jmp     short loc_10E35
 seg000:0E45 ; ---------------------------------------------------------------------------
 seg000:0E45
-seg000:0E45 loc_10E45:                              ; CODE XREF: printf+82j
-seg000:0E45                                         ; DATA XREF: printf:off_10D9Co
+seg000:0E45 loc_10E45:                              ; CODE XREF: printf+82 j
+seg000:0E45                                         ; DATA XREF: printf:off_10D9C o
 seg000:0E45                 cmp     ch, 4           ; jumptable 00010D97 case 4
 seg000:0E48                 jnb     short loc_10E1E
 seg000:0E4A                 mov     ch, 4
 seg000:0E4C                 jmp     short loc_10E35
 seg000:0E4E ; ---------------------------------------------------------------------------
 seg000:0E4E
-seg000:0E4E loc_10E4E:                              ; CODE XREF: printf+82j
-seg000:0E4E                                         ; printf+F9j
+seg000:0E4E loc_10E4E:                              ; CODE XREF: printf+82 j
+seg000:0E4E                                         ; printf+F9 j
 seg000:0E4E                                         ; DATA XREF: ...
 seg000:0E4E                 xchg    ax, dx          ; jumptable 00010D97 case 5
 seg000:0E4F                 sub     al, 30h ; '0'
@@ -2521,7 +2521,7 @@ seg000:0E66                 add     [bp+var_84], ax
 seg000:0E6A                 jmp     short loc_10E35
 seg000:0E6C ; ---------------------------------------------------------------------------
 seg000:0E6C
-seg000:0E6C loc_10E6C:                              ; CODE XREF: printf+140j
+seg000:0E6C loc_10E6C:                              ; CODE XREF: printf+140 j
 seg000:0E6C                 cmp     ch, 4
 seg000:0E6F                 jnz     short loc_10E1E
 seg000:0E71                 xchg    ax, [bp+var_82]
@@ -2533,42 +2533,42 @@ seg000:0E7E                 add     [bp+var_82], ax
 seg000:0E82                 jmp     short loc_10E35
 seg000:0E84 ; ---------------------------------------------------------------------------
 seg000:0E84
-seg000:0E84 loc_10E84:                              ; CODE XREF: printf+82j
-seg000:0E84                                         ; DATA XREF: printf:off_10D9Co
+seg000:0E84 loc_10E84:                              ; CODE XREF: printf+82 j
+seg000:0E84                                         ; DATA XREF: printf:off_10D9C o
 seg000:0E84                 or      [bp+var_80], 10h ; jumptable 00010D97 case 6
 seg000:0E88                 mov     ch, 5
 seg000:0E8A                 jmp     short loc_10E35
 seg000:0E8C ; ---------------------------------------------------------------------------
 seg000:0E8C
-seg000:0E8C loc_10E8C:                              ; CODE XREF: printf+82j
-seg000:0E8C                                         ; DATA XREF: printf:off_10D9Co
+seg000:0E8C loc_10E8C:                              ; CODE XREF: printf+82 j
+seg000:0E8C                                         ; DATA XREF: printf:off_10D9C o
 seg000:0E8C                 and     [bp+var_80], 0EFh ; jumptable 00010D97 case 7
 seg000:0E90                 mov     ch, 5
 seg000:0E92                 jmp     short loc_10E35
 seg000:0E94 ; ---------------------------------------------------------------------------
 seg000:0E94
-seg000:0E94 loc_10E94:                              ; CODE XREF: printf+82j
-seg000:0E94                                         ; DATA XREF: printf:off_10D9Co
+seg000:0E94 loc_10E94:                              ; CODE XREF: printf+82 j
+seg000:0E94                                         ; DATA XREF: printf:off_10D9C o
 seg000:0E94                 mov     bh, 8           ; jumptable 00010D97 case 10
 seg000:0E96                 jmp     short loc_10EA2
 seg000:0E98 ; ---------------------------------------------------------------------------
 seg000:0E98
-seg000:0E98 loc_10E98:                              ; CODE XREF: printf+82j
-seg000:0E98                                         ; DATA XREF: printf:off_10D9Co
+seg000:0E98 loc_10E98:                              ; CODE XREF: printf+82 j
+seg000:0E98                                         ; DATA XREF: printf:off_10D9C o
 seg000:0E98                 mov     bh, 0Ah         ; jumptable 00010D97 case 11
 seg000:0E9A                 jmp     short loc_10EA6
 seg000:0E9C ; ---------------------------------------------------------------------------
 seg000:0E9C
-seg000:0E9C loc_10E9C:                              ; CODE XREF: printf+82j
-seg000:0E9C                                         ; DATA XREF: printf:off_10D9Co
+seg000:0E9C loc_10E9C:                              ; CODE XREF: printf+82 j
+seg000:0E9C                                         ; DATA XREF: printf:off_10D9C o
 seg000:0E9C                 mov     bh, 10h         ; jumptable 00010D97 case 12
 seg000:0E9E                 mov     bl, 0E9h ; 'È'
 seg000:0EA0                 add     bl, dl
 seg000:0EA2
-seg000:0EA2 loc_10EA2:                              ; CODE XREF: printf+181j
+seg000:0EA2 loc_10EA2:                              ; CODE XREF: printf+181 j
 seg000:0EA2                 mov     [bp+var_7F], 0
 seg000:0EA6
-seg000:0EA6 loc_10EA6:                              ; CODE XREF: printf+185j
+seg000:0EA6 loc_10EA6:                              ; CODE XREF: printf+185 j
 seg000:0EA6                 mov     [bp+var_85], 0
 seg000:0EAB                 mov     [bp+var_86], dl
 seg000:0EAF                 mov     di, [bp+arg_0]
@@ -2577,8 +2577,8 @@ seg000:0EB4                 sub     dx, dx
 seg000:0EB6                 jmp     short loc_10EC9
 seg000:0EB8 ; ---------------------------------------------------------------------------
 seg000:0EB8
-seg000:0EB8 loc_10EB8:                              ; CODE XREF: printf+82j
-seg000:0EB8                                         ; DATA XREF: printf:off_10D9Co
+seg000:0EB8 loc_10EB8:                              ; CODE XREF: printf+82 j
+seg000:0EB8                                         ; DATA XREF: printf:off_10D9C o
 seg000:0EB8                 mov     bh, 0Ah         ; jumptable 00010D97 case 9
 seg000:0EBA                 mov     [bp+var_85], 1
 seg000:0EBF                 mov     [bp+var_86], dl
@@ -2586,7 +2586,7 @@ seg000:0EC3                 mov     di, [bp+arg_0]
 seg000:0EC6                 mov     ax, [di]
 seg000:0EC8                 cwd
 seg000:0EC9
-seg000:0EC9 loc_10EC9:                              ; CODE XREF: printf+1A1j
+seg000:0EC9 loc_10EC9:                              ; CODE XREF: printf+1A1 j
 seg000:0EC9                 inc     di
 seg000:0ECA                 inc     di
 seg000:0ECB                 mov     [bp+arg_2], si
@@ -2596,7 +2596,7 @@ seg000:0ED4                 mov     dx, [di]
 seg000:0ED6                 inc     di
 seg000:0ED7                 inc     di
 seg000:0ED8
-seg000:0ED8 loc_10ED8:                              ; CODE XREF: printf+1BDj
+seg000:0ED8 loc_10ED8:                              ; CODE XREF: printf+1BD j
 seg000:0ED8                 mov     [bp+arg_0], di
 seg000:0EDB                 push    dx
 seg000:0EDC                 push    ax
@@ -2604,7 +2604,7 @@ seg000:0EDD                 or      ax, dx
 seg000:0EDF                 jz      short loc_10EE5
 seg000:0EE1                 or      [bp+var_80], 4
 seg000:0EE5
-seg000:0EE5 loc_10EE5:                              ; CODE XREF: printf+1CAj
+seg000:0EE5 loc_10EE5:                              ; CODE XREF: printf+1CA j
 seg000:0EE5                 lea     di, [bp+var_79]
 seg000:0EE8                 push    di
 seg000:0EE9                 mov     al, bh
@@ -2623,12 +2623,12 @@ seg000:0EFE                 jg      short loc_10F03
 seg000:0F00                 jmp     loc_10FE2
 seg000:0F03 ; ---------------------------------------------------------------------------
 seg000:0F03
-seg000:0F03 loc_10F03:                              ; CODE XREF: printf+1E9j
+seg000:0F03 loc_10F03:                              ; CODE XREF: printf+1E9 j
 seg000:0F03                 jmp     loc_10FF0
 seg000:0F06 ; ---------------------------------------------------------------------------
 seg000:0F06
-seg000:0F06 loc_10F06:                              ; CODE XREF: printf+82j
-seg000:0F06                                         ; DATA XREF: printf:off_10D9Co
+seg000:0F06 loc_10F06:                              ; CODE XREF: printf+82 j
+seg000:0F06                                         ; DATA XREF: printf:off_10D9C o
 seg000:0F06                 mov     [bp+var_86], dl ; jumptable 00010D97 case 13
 seg000:0F0A                 mov     [bp+arg_2], si
 seg000:0F0D                 lea     di, [bp+var_7A]
@@ -2649,7 +2649,7 @@ seg000:0F29                 call    sub_10CEC
 seg000:0F2C                 mov     al, 3Ah ; ':'
 seg000:0F2E                 stosb
 seg000:0F2F
-seg000:0F2F loc_10F2F:                              ; CODE XREF: printf+209j
+seg000:0F2F loc_10F2F:                              ; CODE XREF: printf+209 j
 seg000:0F2F                 push    ss
 seg000:0F30                 pop     es
 seg000:0F31                 call    sub_10CEC
@@ -2664,12 +2664,12 @@ seg000:0F4B                 cmp     dx, cx
 seg000:0F4D                 jg      short loc_10F51
 seg000:0F4F                 mov     dx, cx
 seg000:0F51
-seg000:0F51 loc_10F51:                              ; CODE XREF: printf+238j
+seg000:0F51 loc_10F51:                              ; CODE XREF: printf+238 j
 seg000:0F51                 jmp     loc_10FE2
 seg000:0F54 ; ---------------------------------------------------------------------------
 seg000:0F54
-seg000:0F54 loc_10F54:                              ; CODE XREF: printf+82j
-seg000:0F54                                         ; DATA XREF: printf:off_10D9Co
+seg000:0F54 loc_10F54:                              ; CODE XREF: printf+82 j
+seg000:0F54                                         ; DATA XREF: printf:off_10D9C o
 seg000:0F54                 mov     [bp+arg_2], si  ; jumptable 00010D97 case 15
 seg000:0F57                 mov     [bp+var_86], dl
 seg000:0F5B                 mov     di, [bp+arg_0]
@@ -2684,8 +2684,8 @@ seg000:0F6D                 mov     cx, 1
 seg000:0F70                 jmp     loc_1101C
 seg000:0F73 ; ---------------------------------------------------------------------------
 seg000:0F73
-seg000:0F73 loc_10F73:                              ; CODE XREF: printf+82j
-seg000:0F73                                         ; DATA XREF: printf:off_10D9Co
+seg000:0F73 loc_10F73:                              ; CODE XREF: printf+82 j
+seg000:0F73                                         ; DATA XREF: printf:off_10D9C o
 seg000:0F73                 mov     [bp+arg_2], si  ; jumptable 00010D97 case 16
 seg000:0F76                 mov     [bp+var_86], dl
 seg000:0F7A                 mov     di, [bp+arg_0]
@@ -2699,21 +2699,21 @@ seg000:0F8B                 or      di, di
 seg000:0F8D                 jmp     short loc_10F99
 seg000:0F8F ; ---------------------------------------------------------------------------
 seg000:0F8F
-seg000:0F8F loc_10F8F:                              ; CODE XREF: printf+26Cj
+seg000:0F8F loc_10F8F:                              ; CODE XREF: printf+26C j
 seg000:0F8F                 les     di, [di]
 seg000:0F91                 assume es:nothing
 seg000:0F91                 add     [bp+arg_0], 4
 seg000:0F95                 mov     ax, es
 seg000:0F97                 or      ax, di
 seg000:0F99
-seg000:0F99 loc_10F99:                              ; CODE XREF: printf+278j
+seg000:0F99 loc_10F99:                              ; CODE XREF: printf+278 j
 seg000:0F99                 jnz     short loc_10FA0
 seg000:0F9B                 push    ds
 seg000:0F9C                 pop     es
 seg000:0F9D                 assume es:dseg
 seg000:0F9D                 mov     di, offset aNull ; "(null)"
 seg000:0FA0
-seg000:0FA0 loc_10FA0:                              ; CODE XREF: printf:loc_10F99j
+seg000:0FA0 loc_10FA0:                              ; CODE XREF: printf:loc_10F99 j
 seg000:0FA0                 call    $+3
 seg000:0FA3                 jmp     loc_11140
 seg000:0FA6 ; ---------------------------------------------------------------------------
@@ -2721,14 +2721,14 @@ seg000:0FA6                 cmp     cx, [bp+var_82]
 seg000:0FAA                 jbe     short loc_10FB0
 seg000:0FAC                 mov     cx, [bp+var_82]
 seg000:0FB0
-seg000:0FB0 loc_10FB0:                              ; CODE XREF: printf+295j
+seg000:0FB0 loc_10FB0:                              ; CODE XREF: printf+295 j
 seg000:0FB0                 jmp     short loc_1101C
 seg000:0FB0 ; ---------------------------------------------------------------------------
 seg000:0FB2                 db 90h
 seg000:0FB3 ; ---------------------------------------------------------------------------
 seg000:0FB3
-seg000:0FB3 loc_10FB3:                              ; CODE XREF: printf+82j
-seg000:0FB3                                         ; DATA XREF: printf:off_10D9Co
+seg000:0FB3 loc_10FB3:                              ; CODE XREF: printf+82 j
+seg000:0FB3                                         ; DATA XREF: printf:off_10D9C o
 seg000:0FB3                 mov     [bp+arg_2], si  ; jumptable 00010D97 case 14
 seg000:0FB6                 mov     [bp+var_86], dl
 seg000:0FBA                 mov     di, [bp+arg_0]
@@ -2737,7 +2737,7 @@ seg000:0FC1                 or      cx, cx
 seg000:0FC3                 jge     short loc_10FC8
 seg000:0FC5                 mov     cx, 6
 seg000:0FC8
-seg000:0FC8 loc_10FC8:                              ; CODE XREF: printf+2AEj
+seg000:0FC8 loc_10FC8:                              ; CODE XREF: printf+2AE j
 seg000:0FC8                 push    di
 seg000:0FC9                 push    cx
 seg000:0FCA                 lea     bx, [bp+var_79]
@@ -2752,15 +2752,15 @@ seg000:0FDD                 push    ss
 seg000:0FDE                 pop     es
 seg000:0FDF                 lea     di, [bp+var_79]
 seg000:0FE2
-seg000:0FE2 loc_10FE2:                              ; CODE XREF: printf+1EBj
-seg000:0FE2                                         ; printf:loc_10F51j
+seg000:0FE2 loc_10FE2:                              ; CODE XREF: printf+1EB j
+seg000:0FE2                                         ; printf:loc_10F51 j
 seg000:0FE2                 test    [bp+var_80], 8
 seg000:0FE6                 jz      short loc_10FFD
 seg000:0FE8                 mov     dx, [bp+var_84]
 seg000:0FEC                 or      dx, dx
 seg000:0FEE                 jle     short loc_10FFD
 seg000:0FF0
-seg000:0FF0 loc_10FF0:                              ; CODE XREF: printf:loc_10F03j
+seg000:0FF0 loc_10FF0:                              ; CODE XREF: printf:loc_10F03 j
 seg000:0FF0                 call    $+3
 seg000:0FF3                 jmp     loc_11140
 seg000:0FF6 ; ---------------------------------------------------------------------------
@@ -2768,8 +2768,8 @@ seg000:0FF6                 sub     dx, cx
 seg000:0FF8                 jle     short loc_10FFD
 seg000:0FFA                 mov     [bp+var_7E], dx
 seg000:0FFD
-seg000:0FFD loc_10FFD:                              ; CODE XREF: printf+2D1j
-seg000:0FFD                                         ; printf+2D9j ...
+seg000:0FFD loc_10FFD:                              ; CODE XREF: printf+2D1 j
+seg000:0FFD                                         ; printf+2D9 j ...
 seg000:0FFD                 mov     al, [bp+var_7F]
 seg000:1000                 or      al, al
 seg000:1002                 jz      short loc_11016
@@ -2780,14 +2780,14 @@ seg000:100B                 sub     [bp+var_7E], 1
 seg000:100F                 adc     [bp+var_7E], 0
 seg000:1013                 mov     es:[di], al
 seg000:1016
-seg000:1016 loc_11016:                              ; CODE XREF: printf+2EDj
-seg000:1016                                         ; printf+2F3j
+seg000:1016 loc_11016:                              ; CODE XREF: printf+2ED j
+seg000:1016                                         ; printf+2F3 j
 seg000:1016                 call    $+3
 seg000:1019                 jmp     loc_11140
 seg000:101C ; ---------------------------------------------------------------------------
 seg000:101C
-seg000:101C loc_1101C:                              ; CODE XREF: printf+25Bj
-seg000:101C                                         ; printf:loc_10FB0j
+seg000:101C loc_1101C:                              ; CODE XREF: printf+25B j
+seg000:101C                                         ; printf:loc_10FB0 j
 seg000:101C                 mov     si, di
 seg000:101E                 mov     di, [bp+var_88]
 seg000:1022                 mov     bx, [bp+var_84]
@@ -2804,39 +2804,39 @@ seg000:103E                 mov     [bp+var_7E], 1
 seg000:1043                 jmp     short loc_11061
 seg000:1045 ; ---------------------------------------------------------------------------
 seg000:1045
-seg000:1045 loc_11045:                              ; CODE XREF: printf+321j
+seg000:1045 loc_11045:                              ; CODE XREF: printf+321 j
 seg000:1045                 cmp     ah, 78h ; 'x'
 seg000:1048                 jz      short loc_1104F
 seg000:104A                 cmp     ah, 58h ; 'X'
 seg000:104D                 jnz     short loc_11061
 seg000:104F
-seg000:104F loc_1104F:                              ; CODE XREF: printf+333j
+seg000:104F loc_1104F:                              ; CODE XREF: printf+333 j
 seg000:104F                 or      [bp+var_80], 40h
 seg000:1053                 sub     bx, 2
 seg000:1056                 sub     [bp+var_7E], 2
 seg000:105A                 jge     short loc_11061
 seg000:105C                 mov     [bp+var_7E], 0
 seg000:1061
-seg000:1061 loc_11061:                              ; CODE XREF: printf+318j
-seg000:1061                                         ; printf+327j ...
+seg000:1061 loc_11061:                              ; CODE XREF: printf+318 j
+seg000:1061                                         ; printf+327 j ...
 seg000:1061                 add     cx, [bp+var_7E]
 seg000:1064                 test    [bp+var_80], 2
 seg000:1068                 jnz     short loc_11079
 seg000:106A                 jmp     short loc_11075
 seg000:106C ; ---------------------------------------------------------------------------
 seg000:106C
-seg000:106C loc_1106C:                              ; CODE XREF: printf+362j
+seg000:106C loc_1106C:                              ; CODE XREF: printf+362 j
 seg000:106C                 mov     al, 20h ; ' '
 seg000:106E                 call    $+3
 seg000:1071                 jmp     loc_11152
 seg000:1074 ; ---------------------------------------------------------------------------
 seg000:1074                 dec     bx
 seg000:1075
-seg000:1075 loc_11075:                              ; CODE XREF: printf+355j
+seg000:1075 loc_11075:                              ; CODE XREF: printf+355 j
 seg000:1075                 cmp     bx, cx
 seg000:1077                 jg      short loc_1106C
 seg000:1079
-seg000:1079 loc_11079:                              ; CODE XREF: printf+353j
+seg000:1079 loc_11079:                              ; CODE XREF: printf+353 j
 seg000:1079                 test    [bp+var_80], 40h
 seg000:107D                 jz      short loc_11091
 seg000:107F                 mov     al, 30h ; '0'
@@ -2848,7 +2848,7 @@ seg000:108B                 call    $+3
 seg000:108E                 jmp     loc_11152
 seg000:1091 ; ---------------------------------------------------------------------------
 seg000:1091
-seg000:1091 loc_11091:                              ; CODE XREF: printf+368j
+seg000:1091 loc_11091:                              ; CODE XREF: printf+368 j
 seg000:1091                 mov     dx, [bp+var_7E]
 seg000:1094                 or      dx, dx
 seg000:1096                 jle     short loc_110C5
@@ -2862,8 +2862,8 @@ seg000:10A5                 jz      short loc_110AB
 seg000:10A7                 cmp     al, 2Bh ; '+'
 seg000:10A9                 jnz     short loc_110B5
 seg000:10AB
-seg000:10AB loc_110AB:                              ; CODE XREF: printf+38Cj
-seg000:10AB                                         ; printf+390j
+seg000:10AB loc_110AB:                              ; CODE XREF: printf+38C j
+seg000:10AB                                         ; printf+390 j
 seg000:10AB                 lods    byte ptr es:[si]
 seg000:10AD                 call    $+3
 seg000:10B0                 jmp     loc_11152
@@ -2871,25 +2871,25 @@ seg000:10B3 ; ------------------------------------------------------------------
 seg000:10B3                 dec     cx
 seg000:10B4                 dec     bx
 seg000:10B5
-seg000:10B5 loc_110B5:                              ; CODE XREF: printf+394j
+seg000:10B5 loc_110B5:                              ; CODE XREF: printf+394 j
 seg000:10B5                 xchg    cx, dx
 seg000:10B7                 jcxz    short loc_110C3
 seg000:10B9
-seg000:10B9 loc_110B9:                              ; CODE XREF: printf+3ACj
+seg000:10B9 loc_110B9:                              ; CODE XREF: printf+3AC j
 seg000:10B9                 mov     al, 30h ; '0'
 seg000:10BB                 call    $+3
 seg000:10BE                 jmp     loc_11152
 seg000:10C1 ; ---------------------------------------------------------------------------
 seg000:10C1                 loop    loc_110B9
 seg000:10C3
-seg000:10C3 loc_110C3:                              ; CODE XREF: printf+3A2j
+seg000:10C3 loc_110C3:                              ; CODE XREF: printf+3A2 j
 seg000:10C3                 xchg    cx, dx
 seg000:10C5
-seg000:10C5 loc_110C5:                              ; CODE XREF: printf+381j
+seg000:10C5 loc_110C5:                              ; CODE XREF: printf+381 j
 seg000:10C5                 sub     bx, cx
 seg000:10C7                 jcxz    short loc_110DB
 seg000:10C9
-seg000:10C9 loc_110C9:                              ; CODE XREF: printf:loc_110D9j
+seg000:10C9 loc_110C9:                              ; CODE XREF: printf:loc_110D9 j
 seg000:10C9                 lods    byte ptr es:[si]
 seg000:10CB                 mov     [di], al
 seg000:10CD                 inc     di
@@ -2899,15 +2899,15 @@ seg000:10D3                 call    $+3
 seg000:10D6                 jmp     loc_11160
 seg000:10D9 ; ---------------------------------------------------------------------------
 seg000:10D9
-seg000:10D9 loc_110D9:                              ; CODE XREF: printf+3BCj
+seg000:10D9 loc_110D9:                              ; CODE XREF: printf+3BC j
 seg000:10D9                 loop    loc_110C9
 seg000:10DB
-seg000:10DB loc_110DB:                              ; CODE XREF: printf+3B2j
+seg000:10DB loc_110DB:                              ; CODE XREF: printf+3B2 j
 seg000:10DB                 or      bx, bx
 seg000:10DD                 jle     short loc_110EB
 seg000:10DF                 mov     cx, bx
 seg000:10E1
-seg000:10E1 loc_110E1:                              ; CODE XREF: printf+3D4j
+seg000:10E1 loc_110E1:                              ; CODE XREF: printf+3D4 j
 seg000:10E1                 mov     al, 20h ; ' '
 seg000:10E3                 call    $+3
 seg000:10E6                 jmp     short loc_11152
@@ -2916,12 +2916,12 @@ seg000:10E8                 db 90h
 seg000:10E9 ; ---------------------------------------------------------------------------
 seg000:10E9                 loop    loc_110E1
 seg000:10EB
-seg000:10EB loc_110EB:                              ; CODE XREF: printf+3C8j
+seg000:10EB loc_110EB:                              ; CODE XREF: printf+3C8 j
 seg000:10EB                 jmp     loc_10D34
 seg000:10EE ; ---------------------------------------------------------------------------
 seg000:10EE
-seg000:10EE loc_110EE:                              ; CODE XREF: printf+82j
-seg000:10EE                                         ; DATA XREF: printf:off_10D9Co
+seg000:10EE loc_110EE:                              ; CODE XREF: printf+82 j
+seg000:10EE                                         ; DATA XREF: printf:off_10D9C o
 seg000:10EE                 mov     [bp+arg_2], si  ; jumptable 00010D97 case 17
 seg000:10F1                 mov     di, [bp+arg_0]
 seg000:10F4                 test    [bp+var_80], 20h
@@ -2933,12 +2933,12 @@ seg000:1101                 pop     es
 seg000:1102                 jmp     short loc_1110A
 seg000:1104 ; ---------------------------------------------------------------------------
 seg000:1104
-seg000:1104 loc_11104:                              ; CODE XREF: printf+3E3j
+seg000:1104 loc_11104:                              ; CODE XREF: printf+3E3 j
 seg000:1104                 les     di, [di]
 seg000:1106                 assume es:nothing
 seg000:1106                 add     [bp+arg_0], 4
 seg000:110A
-seg000:110A loc_1110A:                              ; CODE XREF: printf+3EDj
+seg000:110A loc_1110A:                              ; CODE XREF: printf+3ED j
 seg000:110A                 mov     ax, 50h ; 'P'
 seg000:110D                 sub     al, [bp+var_51]
 seg000:1110                 add     ax, [bp+var_54]
@@ -2946,14 +2946,14 @@ seg000:1113                 mov     es:[di], ax
 seg000:1116                 jmp     loc_10D30
 seg000:1119 ; ---------------------------------------------------------------------------
 seg000:1119
-seg000:1119 loc_11119:                              ; CODE XREF: printf+7Bj
-seg000:1119                                         ; printf+82j ...
+seg000:1119 loc_11119:                              ; CODE XREF: printf+7B j
+seg000:1119                                         ; printf+82 j ...
 seg000:1119                 mov     si, [bp+var_7C] ; default
 seg000:1119                                         ; jumptable 00010D97 cases 18-20
 seg000:111C                 mov     di, [bp+var_88]
 seg000:1120                 mov     al, 25h ; '%'
 seg000:1122
-seg000:1122 loc_11122:                              ; CODE XREF: printf+416j
+seg000:1122 loc_11122:                              ; CODE XREF: printf+416 j
 seg000:1122                 call    $+3
 seg000:1125                 jmp     short loc_11152
 seg000:1125 ; ---------------------------------------------------------------------------
@@ -2962,7 +2962,7 @@ seg000:1128                 lodsb
 seg000:1129                 or      al, al
 seg000:112B                 jnz     short loc_11122
 seg000:112D
-seg000:112D loc_1112D:                              ; CODE XREF: printf:loc_10D50j
+seg000:112D loc_1112D:                              ; CODE XREF: printf:loc_10D50 j
 seg000:112D                 cmp     [bp+var_51], 50h ; 'P'
 seg000:1131                 jge     short loc_11139
 seg000:1133                 call    $+3
@@ -2971,15 +2971,15 @@ seg000:1136 ; ------------------------------------------------------------------
 seg000:1138                 db 90h
 seg000:1139 ; ---------------------------------------------------------------------------
 seg000:1139
-seg000:1139 loc_11139:                              ; CODE XREF: printf+41Cj
+seg000:1139 loc_11139:                              ; CODE XREF: printf+41C j
 seg000:1139                 pop     es
 seg000:113A                 mov     ax, [bp+var_54]
 seg000:113D                 jmp     short loc_11188
 seg000:113D ; ---------------------------------------------------------------------------
 seg000:113F                 align 2
 seg000:1140
-seg000:1140 loc_11140:                              ; CODE XREF: printf+28Ej
-seg000:1140                                         ; printf+2DEj ...
+seg000:1140 loc_11140:                              ; CODE XREF: printf+28E j
+seg000:1140                                         ; printf+2DE j ...
 seg000:1140                 push    di
 seg000:1141                 mov     cx, 0FFFFh
 seg000:1144                 mov     al, 0
@@ -2992,8 +2992,8 @@ seg000:114D                 add     ax, 3
 seg000:1150                 jmp     ax
 seg000:1152 ; ---------------------------------------------------------------------------
 seg000:1152
-seg000:1152 loc_11152:                              ; CODE XREF: printf+35Cj
-seg000:1152                                         ; printf+36Fj ...
+seg000:1152 loc_11152:                              ; CODE XREF: printf+35C j
+seg000:1152                                         ; printf+36F j ...
 seg000:1152                 mov     [di], al
 seg000:1154                 inc     di
 seg000:1155                 dec     [bp+var_51]
@@ -3003,8 +3003,8 @@ seg000:115B                 add     ax, 3
 seg000:115E                 jmp     ax
 seg000:1160 ; ---------------------------------------------------------------------------
 seg000:1160
-seg000:1160 loc_11160:                              ; CODE XREF: printf+36j
-seg000:1160                                         ; printf+3C1j ...
+seg000:1160 loc_11160:                              ; CODE XREF: printf+36 j
+seg000:1160                                         ; printf+3C1 j ...
 seg000:1160                 push    bx
 seg000:1161                 push    cx
 seg000:1162                 push    dx
@@ -3028,7 +3028,7 @@ seg000:1183                 add     ax, 3
 seg000:1186                 jmp     ax
 seg000:1188 ; ---------------------------------------------------------------------------
 seg000:1188
-seg000:1188 loc_11188:                              ; CODE XREF: printf+428j
+seg000:1188 loc_11188:                              ; CODE XREF: printf+428 j
 seg000:1188                 mov     sp, bp
 seg000:118A                 pop     bp
 seg000:118B                 pop     di
@@ -3045,53 +3045,53 @@ dseg:0000 dseg            segment para public 'DATA' use16
 dseg:0000                 assume cs:dseg
 dseg:0000                 db    0
 dseg:0001                 db    0
-dseg:0002 stdout          db    0                 ; DATA XREF: write_to_file+2o
+dseg:0002 stdout          db    0                 ; DATA XREF: write_to_file+2 o
 dseg:0003                 db    0
 dseg:0004 aTurboCCopyrigh db 'Turbo-C - Copyright (c) 1987 Borland Intl.',0
-dseg:002F aNullPointerAss db 'Null pointer assignment',0Dh,0Ah ; DATA XREF: sub_1010B+2Eo
+dseg:002F aNullPointerAss db 'Null pointer assignment',0Dh,0Ah ; DATA XREF: sub_1010B+2E o
 dseg:002F                 db 'Divide error',0Dh,0Ah
 dseg:002F                 db 'Abnormal program termination',0Dh,0Ah,0
 dseg:0075                 db    0
-dseg:0076 unk_11206       db    0                 ; DATA XREF: start+84w
+dseg:0076 unk_11206       db    0                 ; DATA XREF: start+84 w
 dseg:0077                 db    0
-dseg:0078 word_11208      dw 0                    ; DATA XREF: start+100r
-dseg:0078                                         ; sub_10B5A+8Ew
-dseg:007A word_1120A      dw 0                    ; DATA XREF: start+FCr
-dseg:007A                                         ; sub_10B5A+ABw
-dseg:007C word_1120C      dw 0                    ; DATA XREF: start+F8r
-dseg:007C                                         ; sub_10C43+2Cw
-dseg:007E word_1120E      dw 0                    ; DATA XREF: start+69w
-dseg:007E                                         ; sub_10B5A+6Dr ...
-dseg:0080 word_11210      dw 0                    ; DATA XREF: start+1Dw
-dseg:0080                                         ; sub_10B5A+7Er ...
-dseg:0082 word_11212      dw 0                    ; DATA XREF: start+76w
-dseg:0082                                         ; sub_10C43+1Fr
-dseg:0084 word_11214      dw 0                    ; DATA XREF: start+19w
-dseg:0084                                         ; start+D0r ...
-dseg:0086 word_11216      dw 0                    ; DATA XREF: start+16w
-dseg:0086                                         ; sub_10B5A+77r
-dseg:0088 word_11218      dw 0                    ; DATA XREF: sub_107EF:loc_10804w
-dseg:0088                                         ; sub_1080F:loc_10832w
-dseg:008A word_1121A      dw 0                    ; DATA XREF: start+25w
-dseg:008A                                         ; start+4Bw ...
-dseg:008C off_1121C       dw 1670h                ; DATA XREF: sub_107EF+10w
-dseg:008C                                         ; sub_1080F+3r ...
+dseg:0078 word_11208      dw 0                    ; DATA XREF: start+100 r
+dseg:0078                                         ; sub_10B5A+8E w
+dseg:007A word_1120A      dw 0                    ; DATA XREF: start+FC r
+dseg:007A                                         ; sub_10B5A+AB w
+dseg:007C word_1120C      dw 0                    ; DATA XREF: start+F8 r
+dseg:007C                                         ; sub_10C43+2C w
+dseg:007E word_1120E      dw 0                    ; DATA XREF: start+69 w
+dseg:007E                                         ; sub_10B5A+6D r ...
+dseg:0080 word_11210      dw 0                    ; DATA XREF: start+1D w
+dseg:0080                                         ; sub_10B5A+7E r ...
+dseg:0082 word_11212      dw 0                    ; DATA XREF: start+76 w
+dseg:0082                                         ; sub_10C43+1F r
+dseg:0084 word_11214      dw 0                    ; DATA XREF: start+19 w
+dseg:0084                                         ; start+D0 r ...
+dseg:0086 word_11216      dw 0                    ; DATA XREF: start+16 w
+dseg:0086                                         ; sub_10B5A+77 r
+dseg:0088 word_11218      dw 0                    ; DATA XREF: sub_107EF:loc_10804 w
+dseg:0088                                         ; sub_1080F:loc_10832 w
+dseg:008A word_1121A      dw 0                    ; DATA XREF: start+25 w
+dseg:008A                                         ; start+4B w ...
+dseg:008C off_1121C       dw 1670h                ; DATA XREF: sub_107EF+10 w
+dseg:008C                                         ; sub_1080F+3 r ...
 dseg:008E                 align 4
-dseg:0090 word_11220      dw 0                    ; DATA XREF: start+C8w
+dseg:0090 word_11220      dw 0                    ; DATA XREF: start+C8 w
 dseg:0092                 align 4
-dseg:0094 word_11224      dw 0                    ; DATA XREF: start+CCw
+dseg:0094 word_11224      dw 0                    ; DATA XREF: start+CC w
 dseg:0096                 align 4
-dseg:0098 word_11228      dw 0                    ; DATA XREF: start+21w
-dseg:009A aNumberOfMaze   db 'Number of maze: ',0 ; DATA XREF: sub_10174+11o
-dseg:00AB a2d             db '%2d',0              ; DATA XREF: sub_10174+27o
-dseg:00AF aMazeD          db 'Maze: %d',0         ; DATA XREF: sub_10174+E8o
-dseg:00B8 aMoves          db 'Moves: ',0          ; DATA XREF: sub_10174+10Do
-dseg:00C0 aStoneMoves     db 'Stone moves: ',0    ; DATA XREF: sub_10174+122o
-dseg:00CE aD              db '%d',0               ; DATA XREF: sub_10174+14Bo
-dseg:00D1 aD_0            db '%d',0               ; DATA XREF: sub_10174+171o
-dseg:00D4 aCongratulation db 'Congratulations !!!',0 ; DATA XREF: sub_10174+36Do
-dseg:00E8 symbols         db 20h                  ; DATA XREF: draw_symbol_center_xy+24r
-dseg:00E8                                         ; draw_symbol_xy+1Ar
+dseg:0098 word_11228      dw 0                    ; DATA XREF: start+21 w
+dseg:009A aNumberOfMaze   db 'Number of maze: ',0 ; DATA XREF: sub_10174+11 o
+dseg:00AB a2d             db '%2d',0              ; DATA XREF: sub_10174+27 o
+dseg:00AF aMazeD          db 'Maze: %d',0         ; DATA XREF: sub_10174+E8 o
+dseg:00B8 aMoves          db 'Moves: ',0          ; DATA XREF: sub_10174+10D o
+dseg:00C0 aStoneMoves     db 'Stone moves: ',0    ; DATA XREF: sub_10174+122 o
+dseg:00CE aD              db '%d',0               ; DATA XREF: sub_10174+14B o
+dseg:00D1 aD_0            db '%d',0               ; DATA XREF: sub_10174+171 o
+dseg:00D4 aCongratulation db 'Congratulations !!!',0 ; DATA XREF: sub_10174+36D o
+dseg:00E8 symbols         db 20h                  ; DATA XREF: draw_symbol_center_xy+24 r
+dseg:00E8                                         ; draw_symbol_xy+1A r
 dseg:00E9                 db    3
 dseg:00EA                 db 0B1h ; ±
 dseg:00EB                 db    1
@@ -3101,8 +3101,8 @@ dseg:00EE                 db  23h ; #
 dseg:00EF                 db    1
 dseg:00F0                 db  20h
 dseg:00F1                 db    0
-dseg:00F2 colors          db 0                    ; DATA XREF: draw_symbol_center_xy+1Br
-dseg:00F2                                         ; draw_symbol_xy+11r
+dseg:00F2 colors          db 0                    ; DATA XREF: draw_symbol_center_xy+1B r
+dseg:00F2                                         ; draw_symbol_xy+11 r
 dseg:00F3                 db  0Eh
 dseg:00F4                 db  64h ; d
 dseg:00F5                 db  0Ch
@@ -3113,7 +3113,7 @@ dseg:00F9                 db  24h ; $
 dseg:00FA                 db    0
 dseg:00FB                 db    0
 dseg:00FC level_01        db 16h, 0Bh, 0A2h, 0DFh, 38h, 32h, 1Fh, 38h, 2Ah, 3, 0E6h
-dseg:00FC                                         ; DATA XREF: print_level+13o
+dseg:00FC                                         ; DATA XREF: print_level+13 o
 dseg:00FC                 db 12h, 0C0h, 0A5h, 0F2h, 83h, 2, 81h, 3, 0E4h, 12h, 82h
 dseg:00FC                 db 25h, 6, 0CDh, 64h, 22h, 51h, 0ACh, 11h, 0A1h, 0Ah, 5
 dseg:00FC                 db 0E5h, 11h, 0B1h, 14h, 82h, 29h, 82h, 31h, 0A0h, 0E1h
@@ -4010,7 +4010,7 @@ dseg:147C                 db  43h ; C
 dseg:147D                 db  41h ; A
 dseg:147E                 db  63h ; c
 dseg:147F                 db    1
-dseg:1480 level_offsets   dw 0                    ; DATA XREF: print_level+Fr
+dseg:1480 level_offsets   dw 0                    ; DATA XREF: print_level+F r
 dseg:1482                 dw 32h
 dseg:1484                 dw 5Dh
 dseg:1486                 dw 82h
@@ -4071,7 +4071,7 @@ dseg:14F2                 dw 1032h
 dseg:14F4                 dw 10B7h
 dseg:14F6                 dw 114Fh
 dseg:14F8                 dw 11BBh
-dseg:14FA bit_masks       dw 1                    ; DATA XREF: sub_10728+23r
+dseg:14FA bit_masks       dw 1                    ; DATA XREF: sub_10728+23 r
 dseg:14FC                 dw 2
 dseg:14FE                 dw 4
 dseg:1500                 dw 8
@@ -4079,27 +4079,27 @@ dseg:1502                 dw 10h
 dseg:1504                 dw 20h
 dseg:1506                 dw 40h
 dseg:1508                 dw 80h
-dseg:150A unk_1269A       db    0                 ; DATA XREF: seg000:07CEr
-dseg:150A                                         ; seg000:07DDr ...
+dseg:150A unk_1269A       db    0                 ; DATA XREF: seg000:07CE r
+dseg:150A                                         ; seg000:07DD r ...
 dseg:150B                 db    0
 dseg:150C aPrintfFloatingPointFormats db 'printf : floating point formats not linked',0Dh,0Ah
 dseg:150C                 db 'scanf : floating point formats not linked',0Dh,0Ah,0
-dseg:1564 word_126F4      dw 878h                 ; DATA XREF: exit:loc_10893r
-dseg:1566 word_126F6      dw 878h                 ; DATA XREF: exit+1Er
-dseg:1568 word_126F8      dw 878h                 ; DATA XREF: exit+22r
-dseg:156A unk_126FA       db    0                 ; DATA XREF: keyin+3w
-dseg:156A                                         ; seg000:0956w ...
+dseg:1564 word_126F4      dw 878h                 ; DATA XREF: exit:loc_10893 r
+dseg:1566 word_126F6      dw 878h                 ; DATA XREF: exit+1E r
+dseg:1568 word_126F8      dw 878h                 ; DATA XREF: exit+22 r
+dseg:156A unk_126FA       db    0                 ; DATA XREF: keyin+3 w
+dseg:156A                                         ; seg000:0956 w ...
 dseg:156B                 db    0
 dseg:156C                 db    0
 dseg:156D                 db    0
 dseg:156E                 db  6Ch ; l
 dseg:156F                 db  15h
-dseg:1570 unk_12700       db  6Ch ; l             ; DATA XREF: free+Br
-dseg:1570                                         ; free:loc_1093Bw ...
+dseg:1570 unk_12700       db  6Ch ; l             ; DATA XREF: free+B r
+dseg:1570                                         ; free:loc_1093B w ...
 dseg:1571                 db  15h
-dseg:1572 unk_12702       db    0                 ; DATA XREF: start+98r
+dseg:1572 unk_12702       db    0                 ; DATA XREF: start+98 r
 dseg:1573                 db  10h
-dseg:1574 aNull           db '(null)',0           ; DATA XREF: printf+288o
+dseg:1574 aNull           db '(null)',0           ; DATA XREF: printf+288 o
 dseg:157B a0123456789abcd db '0123456789ABCDEF',0
 dseg:158C                 db  13h
 dseg:158D                 db  13h
@@ -4197,44 +4197,44 @@ dseg:15E8                 db  13h
 dseg:15E9                 db  13h
 dseg:15EA                 db  13h
 dseg:15EB                 db    0
-dseg:15EC off_1277C       dw offset sub_10871     ; DATA XREF: start+94r
-dseg:15EE off_1277E       dw offset sub_10871     ; DATA XREF: sub_1010B+Fr
-dseg:15F0 off_12780       dw offset sub_10855     ; DATA XREF: sub_10B50r
+dseg:15EC off_1277C       dw offset sub_10871     ; DATA XREF: start+94 r
+dseg:15EE off_1277E       dw offset sub_10871     ; DATA XREF: sub_1010B+F r
+dseg:15F0 off_12780       dw offset sub_10855     ; DATA XREF: sub_10B50 r
 dseg:15F2                 db 5Eh
 dseg:15F3                 db    8
 dseg:15F4                 db  5Eh ; ^
 dseg:15F5                 db    8
 dseg:15F6                 db  5Eh ; ^
 dseg:15F7                 db    8
-dseg:15F8 sprintf_buf     db 1Eh dup(?)           ; DATA XREF: sub_10174+2Bo
-dseg:15F8                                         ; sub_10174+39o ...
-dseg:1616 level_size_y    dw ?                    ; DATA XREF: print_level+2Ew
-dseg:1616                                         ; print_level+38r ...
-dseg:1618 man_x           dw ?                    ; DATA XREF: sub_10174+BBr
-dseg:1618                                         ; sub_10174+1F3r ...
-dseg:161A level_size_x    dw ?                    ; DATA XREF: sub_10174+B3r
-dseg:161A                                         ; sub_10174+1E5r ...
-dseg:161C number_of_places dw ?                   ; DATA XREF: sub_10174:loc_102B2r
-dseg:161C                                         ; sub_10174+2BBw ...
-dseg:161E man_y           dw ?                    ; DATA XREF: sub_10174+B0r
-dseg:161E                                         ; sub_10174+1FCr ...
-dseg:1620 level_map       dw ?                    ; DATA XREF: sub_10174+B7r
-dseg:1620                                         ; sub_10174+35Er ...
-dseg:1622 word_127B2      dw ?                    ; DATA XREF: next_level_char+Br
-dseg:1622                                         ; next_level_char+59w ...
-dseg:1624 word_127B4      dw ?                    ; DATA XREF: sub_10728+Dw
-dseg:1624                                         ; sub_10728:loc_10742r
-dseg:1626 level_address   dw ?                    ; DATA XREF: print_level+16w
-dseg:1626                                         ; print_level+19r ...
-dseg:1628 center_x_offset dw ?                    ; DATA XREF: draw_symbol_center_xy+Er
-dseg:1628                                         ; print_level+51w
-dseg:162A word_127BA      dw ?                    ; DATA XREF: print_level+64w
-dseg:162A                                         ; sub_10728w ...
-dseg:162C center_y_offset dw ?                    ; DATA XREF: draw_symbol_center_xy+6r
-dseg:162C                                         ; print_level+61w
-dseg:162E word_127BE      dw ?                    ; DATA XREF: print_level+6Aw
-dseg:162E                                         ; next_level_charr ...
-dseg:1630 word_127C0      dw ?                    ; DATA XREF: seg000:07E3w
+dseg:15F8 sprintf_buf     db 1Eh dup(?)           ; DATA XREF: sub_10174+2B o
+dseg:15F8                                         ; sub_10174+39 o ...
+dseg:1616 level_size_y    dw ?                    ; DATA XREF: print_level+2E w
+dseg:1616                                         ; print_level+38 r ...
+dseg:1618 man_x           dw ?                    ; DATA XREF: sub_10174+BB r
+dseg:1618                                         ; sub_10174+1F3 r ...
+dseg:161A level_size_x    dw ?                    ; DATA XREF: sub_10174+B3 r
+dseg:161A                                         ; sub_10174+1E5 r ...
+dseg:161C number_of_places dw ?                   ; DATA XREF: sub_10174:loc_102B2 r
+dseg:161C                                         ; sub_10174+2BB w ...
+dseg:161E man_y           dw ?                    ; DATA XREF: sub_10174+B0 r
+dseg:161E                                         ; sub_10174+1FC r ...
+dseg:1620 level_map       dw ?                    ; DATA XREF: sub_10174+B7 r
+dseg:1620                                         ; sub_10174+35E r ...
+dseg:1622 word_127B2      dw ?                    ; DATA XREF: next_level_char+B r
+dseg:1622                                         ; next_level_char+59 w ...
+dseg:1624 word_127B4      dw ?                    ; DATA XREF: sub_10728+D w
+dseg:1624                                         ; sub_10728:loc_10742 r
+dseg:1626 level_address   dw ?                    ; DATA XREF: print_level+16 w
+dseg:1626                                         ; print_level+19 r ...
+dseg:1628 center_x_offset dw ?                    ; DATA XREF: draw_symbol_center_xy+E r
+dseg:1628                                         ; print_level+51 w
+dseg:162A word_127BA      dw ?                    ; DATA XREF: print_level+64 w
+dseg:162A                                         ; sub_10728 w ...
+dseg:162C center_y_offset dw ?                    ; DATA XREF: draw_symbol_center_xy+6 r
+dseg:162C                                         ; print_level+61 w
+dseg:162E word_127BE      dw ?                    ; DATA XREF: print_level+6A w
+dseg:162E                                         ; next_level_char r ...
+dseg:1630 word_127C0      dw ?                    ; DATA XREF: seg000:07E3 w
 dseg:1632                 db 3Eh dup(?)
 dseg:1632 dseg            ends
 dseg:1632
