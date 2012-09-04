@@ -7,6 +7,10 @@ for DOS called `pusher`. The `pushermaps.c` is the automated map extractor.
 
 There is a couple of screenshots of `pusher.exe` running in DOSBox.
 
+![](https://raw.github.com/begoon/sokoban-maps/master/screenshots/pusher-sokoban-level-01.png)
+
+![](https://raw.github.com/begoon/sokoban-maps/master/screenshots/pusher-sokoban-level-59.png)
+
 Build
 -----
 
