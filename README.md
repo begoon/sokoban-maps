@@ -11,6 +11,8 @@ There is a couple of screenshots of `pusher.exe` running in DOSBox.
 
 ![](https://raw.github.com/begoon/sokoban-maps/master/screenshots/pusher-sokoban-level-59.png)
 
+NOTE: There is a related project - [a Sokoban solver in Zig](https://github.com/begoon/zig-sokoban-solver/).
+
 Build
 -----
 
